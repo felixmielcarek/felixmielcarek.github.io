@@ -10,7 +10,8 @@
     <div>
         <script>
             const urlParams = new URLSearchParams(window.location.search);
-            if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) } 
+            if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) }
+            if(localStorage.getItem("bigbrother-state").localeCompare(urlParams.get('state')) !=0 ) { document.write('Spotify state error') }
             else {
                 document.write('You are connected');
 
