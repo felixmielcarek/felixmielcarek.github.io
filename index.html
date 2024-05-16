@@ -8,9 +8,7 @@
 <body>
     <div>Welcome to Big Brother</div>
 
-    <form id="logForm">
-        <input type="submit" value="Log In" />
-    </form>
+    <button id="logButton">Log In</button>
     
     <script>
         function generateRandomString(length) {
@@ -23,19 +21,20 @@
             return randomString;
         }
 
-        document.getElementById("logForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+        document.addEventListener("DOMContentLoaded", function() {
+            var redirectButton = document.getElementById("logButton");
 
-            let state = generateRandomString(16);
-            let client_id = '5ec7f30903414033a3381995754da3e8';
-            let scope = 'user-read-private+user-read-email+user-library-read+user-library-modify';
-            let redirect_uri = 'https://felixmielcarek.github.io/callback/';
+            redirectButton.addEventListener("click", function() {
+                const queryUrl = new URL("https://accounts.spotify.com/authorize");
+                queryUrl.searchParams.append("response_type", "code");
+                queryUrl.searchParams.append("state", generateRandomString(16));
+                queryUrl.searchParams.append("client_id", "5ec7f30903414033a3381995754da3e8");
+                queryUrl.searchParams.append("scope", "user-read-private user-read-email user-library-read user-library-modify");
+                queryUrl.searchParams.append("redirect_uri", "https://felixmielcarek.github.io/callback/");
 
-            let queryUrl = `https://accounts.spotify.com/authorize?response_type=code&client_id=${client_id}&scope=${scope}&redirect_uri=${redirect_uri}&state=${state}`;
-
-            document.getElementById("logForm").action = queryUrl;
-            document.getElementById("logForm").submit();
-        });
+                window.location.href = queryUrl.href;
+            });
+        });        
     </script>
 </body>
 </html>
