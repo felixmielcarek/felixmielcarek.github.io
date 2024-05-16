@@ -37,7 +37,7 @@
 
             let queryUrl = 'https://accounts.spotify.com/authorize?' + params.toString();
     
-            document.getElementById("logForm").action = customLink;
+            document.getElementById("logForm").action = queryUrl;
             document.getElementById("logForm").submit();
         });
     </script>
