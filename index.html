@@ -25,16 +25,17 @@
 
         document.getElementById("logForm").addEventListener("submit", function(event) {
             event.preventDefault();
-            
+
             state = generateRandomString(16);
-            let queryUrl = 'https://accounts.spotify.com/authorize?' +
-                queryString.stringify({
-                    response_type: 'code',
-                    client_id: '5ec7f30903414033a3381995754da3e8',
-                    scope: 'user-read-private user-read-email user-library-read user-library-modify',
-                    redirect_uri: 'https://felixmielcarek.github.io/callback/',
-                    state: state
-                });
+
+            const params = new URLSearchParams();
+            params.append('response_type', 'code');
+            params.append('client_id', '5ec7f30903414033a3381995754da3e8');
+            params.append('scope', 'user-read-private user-read-email user-library-read user-library-modify');
+            params.append('redirect_uri', 'https://felixmielcarek.github.io/callback/');
+            params.append('state', state);
+
+            let queryUrl = 'https://accounts.spotify.com/authorize?' + params.toString();
     
             document.getElementById("logForm").action = customLink;
             document.getElementById("logForm").submit();
