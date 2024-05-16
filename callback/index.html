@@ -7,6 +7,24 @@
     <title>Big Brother</title>
 </head>
 <body>
-    <div>You are connected</div>
+    <div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) } 
+            else {
+                document.write('You are connected');
+
+                const params = {
+                    code: urlParams.get('code'),
+                    state: urlParams.get('state') 
+                };
+                const options = {
+                    method: 'POST',
+                    body: JSON.stringify( params )  
+                };
+                fetch( 'https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options );
+            }
+        </script>
+    </div>
 </body>
 </html>
