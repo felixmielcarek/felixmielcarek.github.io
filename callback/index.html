@@ -23,8 +23,8 @@
                     method: 'POST',
                     body: JSON.stringify( params )  
                 };
-                const response = await fetch( 'https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options );
-                console.log(response.json());
+                fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
+                    .then((res) => { console.log(response.json()) });
             }
         </script>
     </div>
