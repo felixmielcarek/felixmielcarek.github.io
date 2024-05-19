@@ -2,30 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/common.css">
+    <link rel="icon" type="image/x-icon" href="../../resources/fm-logo.png">
     <title>Big Brother</title>
 </head>
 <body>
-    <div>
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) }
-            if(localStorage.getItem("bigbrother-state").localeCompare(urlParams.get('state')) !=0 ) { document.write('Spotify state error') }
-            else {
-                document.write('You are connected');
+    <div class="main-content">
+        <a href="../">
+            <div class="top-logos">
+                <img src="../resources/fm-logo.png"/>
+                <div>x</div>
+                <img src="../resources/spotify-logo.png"/>
+            </div>
+        </a>
 
-                const params = {
-                    code: urlParams.get('code'),
-                    state: urlParams.get('state') 
-                };
-                const options = {
-                    method: 'POST',
-                    body: JSON.stringify( params )  
-                };
-                fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
-            }
-        </script>
+        <div class="bb-content">
+            <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) }
+                if(localStorage.getItem("bigbrother-state").localeCompare(urlParams.get('state')) !=0 ) { document.write('Spotify state error') }
+                else {
+                    document.write('You are connected');
+    
+                    const params = {
+                        code: urlParams.get('code'),
+                        state: urlParams.get('state') 
+                    };
+                    const options = {
+                        method: 'POST',
+                        body: JSON.stringify( params )  
+                    };
+                    fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="me">Me.</div>
     </div>
 </body>
 </html>

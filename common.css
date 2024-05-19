@@ -8,24 +8,16 @@ body {
     margin: 0px;
     background-color: black;
     color: white;
-
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer {
-    height: 80px;
-    width: 100%;
-    background-color: #2C2C2C;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 14px;
+    
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .top-logos {
+    margin-inline: auto;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -50,33 +42,14 @@ a {
     text-decoration: none;
 }
 
-.tile {
-    margin-inline: 10%;
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color: #2C2C2C;
     display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
-}
-
-.tile img {
-    border-radius: 40px;
-    width: 40%;
-    margin-right: 5%;
-}
-
-.tile-text {
-    display: flex;
-    flex-direction: column;
-    max-width: 55%;
-}
-
-.tile-title {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.tile-description {
-    font-size: 20px;
-    color: #BDBDBD;
+    align-items: center;
+    font-size: 14px;
 }
 
 .me {
