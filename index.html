@@ -2,42 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Big Brother</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Spotifel</title>
 </head>
 <body>
-    <div>Welcome to Big Brother</div>
+    <div class="top-logos">
+        <img src="./resources/fm-logo.png"/>
+        <div>x</div>
+        <img src="./resources/spotify-logo.png"/>
+    </div>
 
-    <button id="logButton">Log In</button>
+    <a href="big-brother/">
+        <div class="tile">
+            <img src="./resources/tmp.jpg"/>
+            <div class="tile-text">
+                <div class="tile-title">Big Brother</div>
+                <div class="tile-description">Never forget again a good album with your Big Brother !</div>
+            </div>
+        </div>
+    </a>
+
+    <a href="big-brother/">
+        <div class="tile">
+            <img src="./resources/tmp.jpg"/>
+            <div class="tile-text">
+                <div class="tile-title">Gold Digger</div>
+                <div class="tile-description">Tool that updates a Spotify playlist with new released tracks from your favorite artists.</div>
+            </div>
+        </div>
+    </a>
     
-    <script>
-        function generateRandomString(length) {
-            const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            let randomString = '';
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                randomString += charset[randomIndex];
-            }
-            return randomString;
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var redirectButton = document.getElementById("logButton");
-
-            redirectButton.addEventListener("click", function() {
-                const state = generateRandomString(16);
-                const queryUrl = new URL("https://accounts.spotify.com/authorize");
-                queryUrl.searchParams.append("response_type", "code");
-                queryUrl.searchParams.append("state", state);
-                queryUrl.searchParams.append("client_id", "5ec7f30903414033a3381995754da3e8");
-                queryUrl.searchParams.append("scope", "user-read-private user-read-email user-library-read user-library-modify");
-                queryUrl.searchParams.append("redirect_uri", "https://felixmielcarek.github.io/callback/");
-
-                localStorage.setItem("bigbrother-state", state);
-
-                window.location.href = queryUrl.href;
-            });
-        });        
-    </script>
+    <footer>
+        <div class="me">Me.</div>
+    </footer>
 </body>
+
 </html>
