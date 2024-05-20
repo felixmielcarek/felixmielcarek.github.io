@@ -22,7 +22,7 @@
             
         </div>
 
-        <div class="bb-content">
+        <div id="bb-content" class="bb-content">
             <div>
                 <div>If you have liked at least 60% of the track of an album:</div>
                 <div>
@@ -35,17 +35,20 @@
             <div class="activated-status">
                 <script>
                     const urlParams = new URLSearchParams(window.location.search);
+                    let activationState = false;
+
                     if(urlParams.has('error')) { 
                         console.log('Error: ' + urlParams.get('error'));
                         document.write('Activation error');
                     }
                     else {
                         const localState = localStorage.getItem("bigbrother-state") ?? "";
-                        if(localState.localeCompare(urlParams.get('state')) !=0 ) { 
+                        if(localState.localeCompare(urlParams.get('state')) !=0 ) {
                             console.log('Spotify state error');
                             document.write('Activation error');
                         }
                         else {
+                            let activationState = true;
                             document.write('Activated');
             
                             const params = {
@@ -54,7 +57,7 @@
                             };
                             const options = {
                                 method: 'POST',
-                                body: JSON.stringify( params )  
+                                body: JSON.stringify( params )
                             };
                             fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
                         }
@@ -62,7 +65,34 @@
                 </script>
             </div>
 
-            
+            <script>
+                if(activationState) {
+                    var button = document.createElement('button');
+                    button.textContent = 'Deactivate';
+                    button.id = 'logButton';
+                    button.className = 'activate-button';
+                    document.getElementById('bb-content').appendChild(button);
+
+                    document.addEventListener("DOMContentLoaded", function() {
+                    var redirectButton = document.getElementById("logButton");
+        
+                    redirectButton.addEventListener("click", function() {
+                        const params = {
+                            code: urlParams.get('code'),
+                            state: urlParams.get('state')
+                        };
+                        const options = {
+                            method: 'POST',
+                            body: JSON.stringify( params )
+                        };
+                        fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/settings/deactivate', options )
+                        
+                        const queryUrl = new URL("https://felixmielcarek.github.io/big-brother/");
+                        window.location.href = queryUrl.href;
+                    });
+                });        
+                }
+            </script>                  
         </div>
     </div>
 
