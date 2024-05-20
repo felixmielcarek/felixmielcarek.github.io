@@ -10,19 +10,30 @@
 </head>
 <body>
     <div class="main-content">
-        <a href="../">
-            <div class="top-logos">
-                <img src="../resources/fm-logo.png"/>
-                <div>x</div>
-                <img src="../resources/spotify-logo.png"/>
+        <div class="top-content">
+            <div class="top-text">
+                <div class="top-title">Big Brother</div>
+                <div class="top-description">Never forget again a good album with your Big Brother !</div>
             </div>
-        </a>
+
+            <a href="../">
+                <img class="top-logo" src="../resources/fm-logo.png"/>
+            </a>
+            
+        </div>
 
         <div class="bb-content">
-            <div>Welcome to Big Brother</div>
-
-            <button id="logButton">Log In</button>
-            
+            <div>
+                <div>If you have liked at least 60% of the track of an album:</div>
+                <div>
+                    <ol>
+                        <li>add the album to your library</li>
+                        <li>removes the tracks from your Liked Songs playlist</li>
+                    </ol>
+                </div>
+            </div>
+            <button id="logButton" class="activate-button">Activate</button>
+                        
             <script>
                 function generateRandomString(length) {
                     const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';

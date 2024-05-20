@@ -1,3 +1,24 @@
+.top-logos {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 33%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-logos img {
+    max-width: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top-logos div {
+    font-size: 56px;
+}
+
 .tile {
     margin-inline: 10%;
     display: flex;

@@ -10,33 +10,59 @@
 </head>
 <body>
     <div class="main-content">
-        <a href="../../">
-            <div class="top-logos">
-                <img src="../../resources/fm-logo.png"/>
-                <div>x</div>
-                <img src="../../resources/spotify-logo.png"/>
+        <div class="top-content">
+            <div class="top-text">
+                <div class="top-title">Big Brother</div>
+                <div class="top-description">Never forget again a good album with your Big Brother !</div>
             </div>
-        </a>
+
+            <a href="../">
+                <img class="top-logo" src="../../resources/fm-logo.png"/>
+            </a>
+            
+        </div>
 
         <div class="bb-content">
-            <script>
-                const urlParams = new URLSearchParams(window.location.search);
-                if(urlParams.has('error')) { document.write('Error: ' + urlParams.get('error')) }
-                if(localStorage.getItem("bigbrother-state").localeCompare(urlParams.get('state')) !=0 ) { document.write('Spotify state error') }
-                else {
-                    document.write('You are connected');
-    
-                    const params = {
-                        code: urlParams.get('code'),
-                        state: urlParams.get('state') 
-                    };
-                    const options = {
-                        method: 'POST',
-                        body: JSON.stringify( params )  
-                    };
-                    fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
-                }
-            </script>
+            <div>
+                <div>If you have liked at least 60% of the track of an album:</div>
+                <div>
+                    <ol>
+                        <li>add the album to your library</li>
+                        <li>removes the tracks from your Liked Songs playlist</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="activated-status">
+                <script>
+                    const urlParams = new URLSearchParams(window.location.search);
+                    if(urlParams.has('error')) { 
+                        console.log('Error: ' + urlParams.get('error'));
+                        document.write('Activation error');
+                    }
+                    else {
+                        const localState = localStorage.getItem("bigbrother-state") ?? "";
+                        if(localState.localeCompare(urlParams.get('state')) !=0 ) { 
+                            console.log('Spotify state error');
+                            document.write('Activation error');
+                        }
+                        else {
+                            document.write('Activated');
+            
+                            const params = {
+                                code: urlParams.get('code'),
+                                state: urlParams.get('state') 
+                            };
+                            const options = {
+                                method: 'POST',
+                                body: JSON.stringify( params )  
+                            };
+                            fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/', options )
+                        }
+                    }                    
+                </script>
+            </div>
+
+            
         </div>
     </div>
 
