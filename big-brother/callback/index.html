@@ -57,41 +57,57 @@
                             };
                             const options = {
                                 method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify( params )
                             };
                             fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherserver/', options )
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('Network response was not ok ' + response.statusText);
+                                    }
+                                    return response.json();
+                                })
+                                .then(data => {
+                                    console.log(data);
+                                })
+                                .catch(error => {
+                                    console.error('There was a problem with the fetch operation:', error);
+                                });
                         }
-                    }                    
+                    }
+                    activation();
                 </script>
             </div>
 
             <script>
-                if(activationState) {
-                    var button = document.createElement('button');
-                    button.textContent = 'Deactivate';
-                    button.id = 'logButton';
-                    button.className = 'activate-button';
-                    document.getElementById('bb-content').appendChild(button);
-
-                    document.addEventListener("DOMContentLoaded", function() {
-                    var redirectButton = document.getElementById("logButton");
-        
-                    redirectButton.addEventListener("click", function() {
-                        const params = {
-                            code: urlParams.get('code'),
-                            state: urlParams.get('state')
-                        };
-                        const options = {
-                            method: 'POST',
-                            body: JSON.stringify( params )
-                        };
-                        fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/settings/deactivate', options )
-                        
-                        const queryUrl = new URL("https://felixmielcarek.github.io/big-brother/");
-                        window.location.href = queryUrl.href;
-                    });
-                });        
-                }
+                function activation() {
+                    if(activationState) {
+                        var button = document.createElement('button');
+                        button.textContent = 'Deactivate';
+                        button.id = 'logButton';
+                        button.className = 'activate-button';
+                        document.getElementById('bb-content').appendChild(button);
+    
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var redirectButton = document.getElementById("logButton");
+                
+                            redirectButton.addEventListener("click", function() {
+                                const params = {
+                                    code: urlParams.get('code'),
+                                    state: urlParams.get('state')
+                                };
+                                const options = {
+                                    method: 'POST',
+                                    body: JSON.stringify( params )
+                                };
+                                fetch('https://codefirst.iut.uca.fr/containers/felixmielcarek-bigbrotherwebapp/settings/deactivate', options )
+                                
+                                const queryUrl = new URL("https://felixmielcarek.github.io/big-brother/");
+                                window.location.href = queryUrl.href;
+                            });
+                        });        
+                    }
+                }                
             </script>                  
         </div>
     </div>
