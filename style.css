@@ -28,17 +28,23 @@
     transition: box-shadow 0.5s ease, background-color 0.5s ease;
 }
 
-.tile img {
+.tile-img {
     border-radius: 40px;
+    width: 40%;
     max-height: 300px;
-    max-width: 40%;
     margin-right: 5%;
+    display: flex;
+}
+
+.tile-img img {
+    max-height: 300px;
+    max-width: 100%;
+    margin-inline: auto;
 }
 
 .tile-text {
     display: flex;
     flex-direction: column;
-    max-width: 55%;
 }
 
 .tile-title {
