@@ -31,7 +31,7 @@
 .tile img {
     border-radius: 40px;
     max-height: 300px;
-    width: 40%;
+    max-width: 40%;
     margin-right: 5%;
 }
 
