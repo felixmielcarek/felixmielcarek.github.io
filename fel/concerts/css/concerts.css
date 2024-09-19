@@ -1,0 +1,78 @@
+#year-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.year-card + .year-card { /* each year-card after a year-card */
+    margin-top: 10px;
+}
+
+.year-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.year-date {
+    margin-block: auto;
+    margin-right: 10px;
+
+    font-size: 60px;
+}
+
+.year-chrono {
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+.concert-point {
+    height: 15px; /* X% of year-chrono size */
+    width: 15px;
+    position: absolute;
+    top: 42%; /* 50% - X%/2 */
+    border-radius: 5px;
+    transform: translateX(-8px); /* X%/2 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.concert-point:hover {
+    transform: translateX(-8px) rotate(180deg) scale(2);
+}
+
+#canada-period {
+    height: 120px;
+    width: 33%;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-image: url('../images/canada-flag.svg');
+    background-size: cover; /* Adjusts how the image fits within the div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating of the image */
+}
+
+#covid-period-20 {
+    height: 120px;
+    margin-left: 8%;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#covid-period-21 {
+    height: 120px;
+    width: 34%;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.virus {
+    width: 120px;
+    margin: auto;
+}
+
+.virus-svg {
+    width: 100%;
+}
