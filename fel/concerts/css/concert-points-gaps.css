@@ -1,3 +1,79 @@
+/* Gap per week */
+
+.concert-07 {
+    left: 13%;
+}
+
+.concert-10 {
+    left: 19%;
+}
+
+.concert-12 {
+    left: 23%;
+}
+
+.concert-13 {
+    left: 25%;
+}
+
+.concert-16 {
+    left: 30%;
+}
+
+.concert-17 {
+    left: 32%;
+}
+
+.concert-20 {
+    left: 38%;
+}
+
+.concert-22 {
+    left: 42%;
+}
+
+.concert-23 {
+    left: 44%;
+}
+
+.concert-24 {
+    left: 46%;
+}
+
+.concert-25 {
+    left: 48%;
+}
+
+.concert-26 {
+    left: 50%;
+}
+
+.concert-34 {
+    left: 65%;
+}
+
+.concert-38 {
+    left: 73%;
+}
+
+.concert-39 {
+    left: 75%;
+}
+
+.concert-41 {
+    left: 78%;
+}
+
+.concert-42 {
+    left: 80%;
+}
+
+.concert-50 {
+    left: 96%;
+}
+
+/* Gap per date (DDMM) */
+
 .concert-1702 {
     left: 13%;
 }
