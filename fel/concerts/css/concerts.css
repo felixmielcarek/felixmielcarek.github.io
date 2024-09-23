@@ -1,3 +1,7 @@
+#main {
+    margin-inline: 10%;
+}
+
 #year-cards {
     display: flex;
     flex-direction: column;
@@ -28,13 +32,29 @@
 }
 
 .concert-point {
-    height: 15px; /* X% of year-chrono size */
-    width: 15px;
+    height: 10%; /* X% of year-chrono size */
+    aspect-ratio: 1 / 1;
     position: absolute;
     top: 42%; /* 50% - X%/2 */
     border-radius: 5px;
     transform: translateX(-8px); /* X%/2 */
     transition: transform 0.5s ease-in-out;
+}
+
+.concert-point-a {
+    top: 2%;
+}
+
+.concert-point-b {
+    top: 22%;
+}
+
+.concert-point-d {
+    top: 62%;
+}
+
+.concert-point-e {
+    top: 82%;
 }
 
 .concert-point:hover {
@@ -75,4 +95,49 @@
 
 .virus-svg {
     width: 100%;
+}
+
+.concert-card {
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+}
+
+.concert-infos {
+    height: 150px;
+    width: 20%;
+    display: grid;
+}
+
+.concert-infos div {
+    display: flex;
+    align-items: center;
+    border-right: solid black;
+}
+
+.concert-infos > div:not(:first-child) {
+    border-top: solid black 3px;
+}
+
+.concert-artists {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.concert-artists > div {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.concert-card .artist-image {
+    height: 120px;
+    border-radius: 15px;
+}
+
+.concert-artists > div:not(:first-child) {
+    box-shadow: -3px 0 0 0 black;
 }
