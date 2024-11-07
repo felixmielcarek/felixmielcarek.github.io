@@ -1,10 +1,15 @@
 #main {
-    margin-inline: 10%;
+    margin-inline: 20%;
 }
 
 #year-cards {
     display: flex;
     flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .year-card+.year-card {

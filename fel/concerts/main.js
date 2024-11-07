@@ -105,7 +105,7 @@ const json = `
         ],
         "location": "Coopérative de mai",
         "city": "Clermont-Ferrand",
-        "note": "The first concert where I went solo"
+        "note": "The first concert where I went solo."
     },
     {
         "date": "2022-04-01",
@@ -193,7 +193,7 @@ const json = `
         ],
         "location": "Zénith d'Auvergne",
         "city": "Clermont-Ferrand",
-        "note": "Such amazed by SCH fits during the show, that I only dressed in black udring the weeks following the concert"
+        "note": "Such amazed by SCH fits during the show, that I only dressed in black udring the weeks following the concert."
     },
     {
         "date": "2023-06-17",
@@ -223,7 +223,7 @@ const json = `
         ],
         "festival": "Woodstower",
         "city": "Lyon",
-        "note": "We finished the festival with 10cm of water above our ankles"
+        "note": "We finished the festival with 10cm of water above our ankles."
     },
     {
         "date": "2023-09-30",
@@ -267,7 +267,7 @@ const json = `
         ],
         "location": "Coopérative de mai",
         "city": "Clermont-Ferrand",
-        "note": "It's the period when I started to follow Clermont-Ferrand underground rap scene, notably open-mics"
+        "note": "It's the period when I started to follow Clermont-Ferrand underground rap scene, notably open-mics."
     },
     {
         "date": "2024-06-07",
@@ -295,18 +295,18 @@ const json = `
         "date": "2024-06-28",
         "artists": [
             { "name": "So La Lune", "image": "solalune.png" },
-            { "name": "Doums & Némir & Edge & Esso Luxueux & S.Pri Noir & 2ZER & Mekra & Framal", "image": "aaa.jpg" }
+            { "name": "Doums & Némir & Edge & Esso Luxueux & S.Pri Noir & 2ZER & Mekra & Framal", "image": "doums.jpg" }
         ],
         "festival": "Europavox",
         "city": "Clermont-Ferrand",
-        "note": "I went to see Ratu$ and Deen Burbigo who should have perform with Doums, the only 2 that have been skipped by lack of time"
+        "note": "I went to see Ratu$ and Deen Burbigo who should have perform with Doums, the only 2 that have been skipped by lack of time."
     },
     {
         "date": "2024-06-29",
         "artists": [
             { "name": "La Fève", "image": "lafeve.jpg" },
             { "name": "Prince Waly", "image": "princewaly.jpg" },
-            { "name": "Eloi", "image": "eloi.jpg" }
+            { "name": "Eloi", "image": "eloi.webp" }
         ],
         "festival": "Europavox",
         "city": "Clermont-Ferrand"
@@ -315,7 +315,7 @@ const json = `
         "date": "2024-06-30",
         "artists": [
             { "name": "Luther", "image": "luther.jpg" },
-            { "name": "Isha & Limsa", "image": "isha&limsa.jpg" }
+            { "name": "Isha & Limsa", "image": "isha&limsa.webp" }
         ],
         "festival": "Europavox",
         "city": "Clermont-Ferrand"
@@ -328,37 +328,37 @@ const json = `
             { "name": "Douze Déluge", "image": "douzedeluge.jpg" },
             { "name": "CRC", "image": "crc.jpg" },
             { "name": "Deelee S", "image": "deelees.jpg" },
-            { "name": "Baby Neelou", "image": "babyneelou.jpg" },
+            { "name": "Baby Neelou", "image": "babyneelou.webp" },
             { "name": "Babysolo33", "image": "babysolo33.jpg" },
             { "name": "Edge", "image": "edge.jpg" },
-            { "name": "Zinée", "image": "zinee.jpg" },
+            { "name": "Zinée", "image": "zinee.png" },
             { "name": "Jolagreen23", "image": "jolagreen23.jpg" },
-            { "name": "Ben PLG", "image": "benplg.jpg" },
+            { "name": "Ben PLG", "image": "benplg.webp" },
             { "name": "NeS", "image": "nes.jpg" },
             { "name": "Wallace Cleaver", "image": "wallacecleaver.jpg" },
-            { "name": "Winnterzuko", "image": "winnterzuko.jpg" },
-            { "name": "Zeu", "image": "zeu.jpg" }
+            { "name": "Winnterzuko", "image": "winnterzuko.png" },
+            { "name": "Zeu", "image": "zeu.png" }
         ],
         "festival": "Grünt festival",
         "city": "Bobigny",
-        "note": "I slept one week in my car to be able to go to this festival"
+        "note": "I slept one week in my car to assist to this festival."
     },
     {
         "date": "2024-09-21",
         "artists": [
-            { "name": "Giuseppe", "image": "guiseppe.jpg" },
+            { "name": "Giuseppe", "image": "giuseppe.webp" },
             { "name": "Heloïm", "image": "heloim.jpg" },
             { "name": "Zoomy", "image": "zoomy.jpg" },
             { "name": "Huntrill", "image": "huntrill.jpg" },
-            { "name": "Isha & Limsa", "image": "isha&limsa.jpg" },
+            { "name": "Isha & Limsa", "image": "isha&limsa.webp" },
             { "name": "Jäde", "image": "jade.jpg" },
             { "name": "ADVM", "image": "advm.jpg" },
-            { "name": "Keroué", "image": "keroue.jpg" },
+            { "name": "Keroué", "image": "keroue.webp" },
             { "name": "Ptite Soeur", "image": "ptitesoeur.jpg" },
             { "name": "TH", "image": "th.jpg" },
             { "name": "Zamdane", "image": "zamdane.jpg" },
             { "name": "Tif", "image": "tif.jpg" },
-            { "name": "Luther & Rounhaa & Abel31 & Amne & Irko & Süblime", "image": "sumblime.jpg" }
+            { "name": "Luther & Rounhaa & Abel31 & Amne & Irko & Süblime", "image": "sublime.jpg" }
         ],
         "festival": "Grünt festival",
         "city": "Bobigny"
@@ -370,7 +370,7 @@ const json = `
         ],
         "location": "Gaité Lyrique",
         "city": "Paris",
-        "note": "It was the release party of his new album Bluebird"
+        "note": "It was the release party of his new album Bluebird."
     }
 ]
 `
@@ -407,6 +407,21 @@ function deserializeConcerts(json) {
 
 const concerts = deserializeConcerts(json);
 
+function getWeekNumber(date) {
+    // Copy the date to avoid modifying the original
+    const currentDate = new Date(date);
+    
+    // Set to nearest Thursday: current date + 4 - current day number (monday is 1, sunday is 7)
+    const dayNumber = (currentDate.getUTCDay() + 6) % 7;
+    currentDate.setUTCDate(currentDate.getUTCDate() - dayNumber + 3);
+  
+    // January 4 is always in week 1
+    const firstThursday = new Date(Date.UTC(currentDate.getUTCFullYear(), 0, 4));
+    const weekNumber = Math.ceil(((currentDate - firstThursday) / 86400000 + 1) / 7);
+  
+    return weekNumber;
+}
+
 function displayChrono() {
     const concertsByYear = {}
     concerts.forEach(item => {
@@ -422,11 +437,13 @@ function displayChrono() {
             const container = document.getElementById('main')
             const newYear = document.createElement('h1')
             newYear.innerHTML = `${year}`
+            newYear.id = `concerts-${year}`
             container.appendChild(newYear)
 
             concertsByYear[year].forEach(concert => {
                 const concertCard = document.createElement('div')
-                concertCard.classList.add("concert-card")
+                concertCard.classList.add(`concert-card`)
+                concertCard.id = `concert-card-${year}-${getWeekNumber(concert.date).toString().padStart(2, '0')}`
 
                 const concertInfos = document.createElement('div')
                 concertInfos.classList.add("concert-infos")
