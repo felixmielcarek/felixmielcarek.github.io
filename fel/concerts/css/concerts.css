@@ -1,0 +1,220 @@
+#main {
+    margin-inline: 20%;
+}
+
+#year-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.year-card+.year-card {
+    /* each year-card after a year-card */
+    margin-top: 10px;
+}
+
+.year-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.year-date {
+    margin-block: auto;
+    margin-right: 10px;
+
+    font-size: 60px;
+}
+
+.year-chrono {
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+.concert-point {
+    height: 10%;
+    /* X% of year-chrono size */
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 42%;
+    /* 50% - X%/2 */
+    border-radius: 5px;
+    transform: translateX(-8px);
+    /* X%/2 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.concert-point-a {
+    top: 2%;
+}
+
+.concert-point-b {
+    top: 22%;
+}
+
+.concert-point-d {
+    top: 62%;
+}
+
+.concert-point-e {
+    top: 82%;
+}
+
+.concert-point:hover {
+    transform: translateX(-8px) rotate(180deg) scale(2);
+}
+
+#canada-period {
+    height: 120px;
+    width: 33%;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-image: url('../images/canada-flag.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+
+#covid-period-20 {
+    height: 120px;
+    margin-left: 8%;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#covid-period-21 {
+    height: 120px;
+    width: 34%;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.virus {
+    width: 120px;
+    margin: auto;
+}
+
+.virus-svg {
+    width: 100%;
+}
+
+#jj-covid-container {
+    position: relative;
+}
+
+#jj-covid-svg {
+    transition: opacity 1s ease;
+}
+
+#jj-covid-text {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 30em;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#jj-covid-container:hover #jj-covid-svg {
+    opacity: 0;
+}
+
+#jj-covid-container:hover #jj-covid-text {
+    opacity: 1;
+    transform: translateY(-50%) translateX(10px);
+}
+
+.concert-card {
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    margin-bottom: 40px;
+}
+
+.concert-infos {
+    height: 150px;
+    width: 20%;
+    display: grid;
+    border-radius: 35px 0px 0px 35px;
+    border-left: solid black 3px;
+    border-bottom: solid black 3px;
+    border-top: solid black 3px;
+}
+
+.concert-infos div {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.concert-infos>div:not(:first-child) {
+    border-top: solid black 3px;
+}
+
+.concert-right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.concert-artists {
+    min-height: 200px;
+    border-radius: 0px 35px 35px 35px;
+    border: solid black 3px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+}
+
+.concert-artists>div:nth-last-child(1):nth-child(2n + 1) {
+    grid-column: span 2;
+}
+
+.concert-artists>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    padding: 10px;
+}
+
+.concert-artists>div.concert-artists-lastrow {
+    border-bottom: none;
+}
+
+.concert-artists>div.concert-artists-lastcol {
+    border-right: none;
+}
+
+.concert-artists img {
+    max-width: 80%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.concert-note {
+    width: 60%;
+    margin: auto;
+    padding-block: 10px;
+    padding-inline: 60px;
+
+    border-radius: 0px 0px 35px 35px;
+    border-inline: solid black 3px;
+    border-bottom: solid black 3px;
+}

@@ -1,0 +1,67 @@
+#card-2016 > .year-chrono {
+    background-color: #FF0000;
+}
+
+#card-2016 .concert-point {
+    background-color: #00ff00;
+}
+
+#card-2017 > .year-chrono {
+    background-color: #FF3300 ;
+}
+
+#card-2017 .concert-point {
+    background-color: #00ffcc;
+}
+
+#card-2018 > .year-chrono {
+    background-color: #FF6600 ;
+}
+
+#card-2018 .concert-point {
+    background-color: #0066ff;
+}
+
+#card-2019 > .year-chrono {
+    background-color: #FF9900 ;
+}
+
+#card-2019 .concert-point {
+    background-color: #3300ff;
+}
+
+#card-2020 > .year-chrono {
+    background-color: gray;
+}
+
+#card-2021 > .year-chrono {
+    background-color: #FFCC00  ;
+}
+
+#card-2021 .concert-point {
+    background-color: #9900ff;
+}
+
+#card-2022 > .year-chrono {
+    background-color: #FFFF00  ;
+}
+
+#card-2022 .concert-point {
+    background-color: #ff00ff;
+}
+
+#card-2023 > .year-chrono {
+    background-color: #CCFF00  ;
+}
+
+#card-2023 .concert-point {
+    background-color: #ff00cc;
+}
+
+#card-2024 > .year-chrono {
+    background-color: #99FF00  ;
+}
+
+#card-2024 .concert-point {
+    background-color: #ff0099;
+}
