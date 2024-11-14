@@ -8,22 +8,12 @@ Welcome to my portfolio, his purpose is to discover me and my projects if it's y
 Portfelio
 \
 |_ Fel
-| \
-| |_ Routines
-| |
-| |_ Concerts
-|
-|_ Spotifel
   \
-  |_ Big Brother
+  |_ Routines
   |
-  |_ Gold Digger
+  |_ Concerts
 ```
 
 ## Fel
 
 It's me and everything related to my personal development.
-
-## Spotifel
-
-This part of the portfolio presents my projects related to music.
