@@ -395,6 +395,22 @@ const json = `
         "city": "Clermont-Ferrand"
     },
     {
+        "date": "2024-11-23",
+        "artists": [
+            { "name": "Peterparker69", "image": "peterparker69.jpg" },
+            { "name": "Wagahai is neko", "image": "wagahaiisneko.jpg" },
+            { "name": "Bloody$anji", "image": "bloodysanji.jpg" },
+            { "name": "6ilverr", "image": "6ilverr.jpg" },
+            { "name": "Ucyll", "image": "ucyll.jpg" },
+            { "name": "Shooda", "image": "Shooda.jpg" },
+            { "name": "Lorenzi", "image": "lorenzi.jpg" },
+            { "name": "Ano poli", "image": "anopoli.jpg" },
+            { "name": "Yume", "image": "yume.jpg" }
+        ],
+        "location": "Gaîté Lyrique",
+        "city": "Paris"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
