@@ -411,6 +411,17 @@ const json = `
         "city": "Paris"
     },
     {
+        "date": "2024-11-24",
+        "artists": [
+            { "name": "Steban", "image": "steban.jpg" },
+            { "name": "Jrk19", "image": "jrk19.jpg" },
+            { "name": "Dinos", "image": "dinos.jpg" }
+        ],
+        "festival": "Dans le club Arte",
+        "location": "Gaîté Lyrique",
+        "city": "Paris"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
