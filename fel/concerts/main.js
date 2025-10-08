@@ -439,6 +439,24 @@ const json = `
         "city": "Paris"
     },
     {
+        "date": "2024-12-19",
+        "artists": [
+            { "name": "ADVM", "image": "advm.jpg" },
+            { "name": "Baby Neelou", "image": "babyneelou.jpg" },
+            { "name": "Mandyspie", "image": "mandyspie.jpg" },
+            { "name": "DND", "image": "dnd.jpg" },
+            { "name": "Dara", "image": "dara.jpg" },
+            { "name": "Kay the Prodigy", "image": "kaytheprodigy.jpg" },
+            { "name": "thaHomey", "image": "thahomey.jpg" },
+            { "name": "Gemen", "image": "gemen.jpg" },
+            { "name": "elyslime!", "image": "elyslime.jpg" },
+            { "name": "Woody & Franz Keloh & Berlam & Mac the fire", "image": "woody&franzkeloh&berlam&macthefire.jpg" }
+        ],
+        "location": "FGO-Barbara",
+        "city": "Paris",
+        "festival": "Symbiose Release Party"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
