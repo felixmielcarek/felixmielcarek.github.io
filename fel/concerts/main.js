@@ -386,6 +386,15 @@ const json = `
         "festival": "Séquence Club"
     },
     {
+        "date": "2024-12-24",
+        "artists": [
+            { "name": "Sto", "image": "sto.jpg" },
+            { "name": "Romsii", "image": "romsii.jpg" }
+        ],
+        "location": "Trabendo",
+        "city": "Paris"
+    },
+    {
         "date": "2025-01-24",
         "artists": [
             { "name": "Al Walid", "image": "alwalid.jpg" },
