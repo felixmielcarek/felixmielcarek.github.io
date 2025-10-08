@@ -439,6 +439,15 @@ const json = `
         "city": "Paris"
     },
     {
+        "date": "2024-12-13",
+        "artists": [
+            { "name": "Sto", "image": "sto.jpg" },
+            { "name": "Romsii", "image": "romsii.jpg" }
+        ],
+        "location": "Trabendo",
+        "city": "Paris"
+    },
+    {
         "date": "2024-12-19",
         "artists": [
             { "name": "ADVM", "image": "advm.jpg" },
@@ -457,13 +466,20 @@ const json = `
         "festival": "Symbiose Release Party"
     },
     {
-        "date": "2024-12-24",
+        "date": "2025-01-09",
         "artists": [
-            { "name": "Sto", "image": "sto.jpg" },
-            { "name": "Romsii", "image": "romsii.jpg" }
+            { "name": "Jolagreen23", "image": "jolagreen23.jpg" }
         ],
-        "location": "Trabendo",
+        "location": "La Cigale",
         "city": "Paris"
+    },
+    {
+        "date": "2025-01-11",
+        "artists": [
+            { "name": "Kaaris", "image": "kaaris.jpg" }
+        ],
+        "location": "Paris La Défense Arena",
+        "city": "Nanterre"
     },
     {
         "date": "2025-01-24",
@@ -629,6 +645,19 @@ const json = `
         "artists": [
             { "name": "Jade", "image": "jade.jpg" },
             { "name": "Akissi", "image": "akissi.webp" }
+        ],
+        "festival": "Séquence Club",
+        "location": "Dock B",
+        "city": "Pantin"
+    },
+    {
+        "date": "2025-10-08",
+        "artists": [
+            { "name": "Infinit", "image": "infinit.jpg" },
+            { "name": "Deelee S", "image": "deelees.webp" },
+            { "name": "Le Double", "image": "ledouble.webp" },
+            { "name": "Chavi", "image": "chavi.webp" },
+            { "name": "OgLounis", "image": "oglounis.webp" }
         ],
         "festival": "Séquence Club",
         "location": "Dock B",
