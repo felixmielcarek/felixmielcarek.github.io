@@ -371,6 +371,56 @@ const json = `
         "location": "Gaité Lyrique",
         "city": "Paris",
         "note": "It was the release party of his new album Bluebird."
+    },
+    {
+        "date": "2024-11-09",
+        "artists": [
+            { "name": "ADVM", "image": "advm.jpg" },
+            { "name": "Jaymee", "image": "jaymee.jpg" },
+            { "name": "Sheng", "image": "sheng.jpg" },
+            { "name": "Heloim", "image": "heloim.jpg" }
+        ],
+        "location": "La Marbrerie",
+        "city": "Montreuil",
+        "festival": "Séquence Club"
+    },
+    {
+        "date": "2025-01-24",
+        "artists": [
+            { "name": "Al Walid", "image": "alwalid.jpg" },
+            { "name": "Guiseppe", "image": "guiseppe.jpg" },
+            { "name": "Leo SVR", "image": "leosvr.jpg" },
+            { "name": "Myth Syzer", "image": "mythsyzer.jpg" }
+        ],
+        "location": "Petit Bain",
+        "city": "Paris",
+        "festival": "Séquence Club"
+    },
+    {
+        "date": "2025-03-08",
+        "artists": [
+            { "name": "Houdi", "image": "houdi.jpg" },
+            { "name": "Deelee S", "image": "deelees.jpg" }
+        ],
+        "location": "Zénith Paris - La Villette",
+        "city": "Paris"
+    },
+    {
+        "date": "2025-04-03",
+        "artists": [
+            { "name": "Jeune Lion", "image": "jeunelion.jpg" },
+            { "name": "elyslime!", "image": "elyslime.jpg" }
+        ],
+        "location": "La Place",
+        "city": "Paris"
+    },
+    {
+        "date": "2025-04-16",
+        "artists": [
+            { "name": "Théodora", "image": "theodora.jpg" }
+        ],
+        "location": "Cabaret Sauvage",
+        "city": "Paris"
     }
 ]
 `
