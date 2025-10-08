@@ -275,7 +275,7 @@ const json = `
             { "name": "Domingo Cruz", "image": "domingocruz.jpg" },
             { "name": "Bara8!", "image": "bara8.jpg" },
             { "name": "Lovarran", "image": "lovarran.jpg" },
-            { "name": "Arch", "image": "arch.jpg" },
+            { "name": "Arch", "image": "arch.jpg" }
         ],
         "location": "Coopérative de mai",
         "city": "Clermont-Ferrand"
