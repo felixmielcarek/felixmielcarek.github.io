@@ -431,6 +431,14 @@ const json = `
         "city": "Paris"
     },
     {
+        "date": "2024-12-06",
+        "artists": [
+            { "name": "Selug & $enar", "image": "selug&senar.jpg" }
+        ],
+        "location": "La Machine du Moulin Rouge",
+        "city": "Paris"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
