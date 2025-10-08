@@ -274,7 +274,8 @@ const json = `
         "artists": [
             { "name": "Domingo Cruz", "image": "domingocruz.jpg" },
             { "name": "Bara8!", "image": "bara8.jpg" },
-            { "name": "Lovarran", "image": "lovarran.jpg" }
+            { "name": "Lovarran", "image": "lovarran.jpg" },
+            { "name": "Arch", "image": "arch.jpg" },
         ],
         "location": "Coopérative de mai",
         "city": "Clermont-Ferrand"
@@ -421,6 +422,137 @@ const json = `
         ],
         "location": "Cabaret Sauvage",
         "city": "Paris"
+    },
+    {
+        "date": "2025-06-13",
+        "artists": [
+            { "name": "Arch", "image": "arch.jpg" }
+        ],
+        "location": "Start & Stop",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-06-21",
+        "artists": [
+            { "name": "Arch", "image": "arch.jpg" }
+        ],
+        "location": "Place des Carmes",
+        "festival": "Fête de la musique",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-06-21",
+        "artists": [
+            { "name": "Arch", "image": "arch.jpg" }
+        ],
+        "location": "Place des Carmes",
+        "festival": "Fête de la musique",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-06-27",
+        "artists": [
+            { "name": "Lamomali", "image": "lamomali.jpg" },
+            { "name": "Polo & Pan", "image": "polo&pan.webp" },
+            { "name": "Bekar", "image": "bekar.jpg" },
+            { "name": "Roland Cristal", "image": "rolandcristal.jpg" }
+        ],
+        "festival": "Europavox",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-06-28",
+        "artists": [
+            { "name": "Philippe Katerine", "image": "philippekaterine.jpg" },
+            { "name": "Kavinsky", "image": "kavinsky.webp" },
+            { "name": "Dalí", "image": "dali.jpg" }
+        ],
+        "festival": "Europavox",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-06-29",
+        "artists": [
+            { "name": "Zaho de Sagazan", "image": "zahodesagazan.jpg" },
+            { "name": "Théa", "image": "thea.webp" },
+            { "name": "Jolagreen23", "image": "jolagreen.jpg" },
+            { "name": "Super Parquet", "image": "superparquet.jpg" }
+        ],
+        "festival": "Europavox",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-07-18",
+        "artists": [
+            { "name": "Bandikoot", "image": "bandikoot.jpg" }
+        ],
+        "festival": "Raeverie Festival",
+        "city": "Saint-Éloy-les-Mines"
+    },
+    {
+        "date": "2025-07-19",
+        "artists": [
+            { "name": "Von Bikräv", "image": "vonbikrav.jpg" },
+            { "name": "Silence", "image": "silence.jpg" },
+            { "name": "Flkn", "image": "flkn.jpg" }
+        ],
+        "festival": "Raeverie Festival",
+        "city": "Saint-Éloy-les-Mines"
+    },
+    {
+        "date": "2025-07-25",
+        "artists": [
+            { "name": "DJ Schnake", "image": "djschnake.jpg" }
+        ],
+        "festival": "Château Perché",
+        "city": "Farcheville"
+    },
+    {
+        "date": "2025-07-26",
+        "artists": [
+            { "name": "Jean Paul Groove", "image": "jeanpaulgroove.jpg" },
+            { "name": "Romain Play", "image": "romainplay.jpg" }
+        ],
+        "festival": "Château Perché",
+        "city": "Farcheville"
+    },
+    {
+        "date": "2025-09-20",
+        "artists": [
+            { "name": "toma!", "image": "toma.jpg" },
+            { "name": "GAL", "image": "GAL.webp" },
+            { "name": "Toothpick", "image": "toothpick.jpg" },
+            { "name": "Arch", "image": "arch.jpg" }
+        ],
+        "location": "Le Lieu-Dit",
+        "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-09-26",
+        "artists": [
+            { "name": "Arch", "image": "arch.jpg" }
+        ],
+        "location": "La Boule Noire",
+        "city": "Paris"
+    },
+    {
+        "date": "2025-10-04",
+        "artists": [
+            { "name": "Ramirez", "image": "ramirez.jpg" },
+            { "name": "Sxmpra", "image": "sxmpra.webp" }
+        ],
+        "location": "La Bellevilloise",
+        "city": "Paris"
+    },
+    {
+        "date": "2025-10-04",
+        "artists": [
+            { "name": "Jade", "image": "jade.jpg" },
+            { "name": "Akissi", "image": "akissi.webp" }
+        ],
+        "festival": "Séquence Club",
+        "location": "Dock B",
+        "city": "Pantin"
     }
 ]
 `
