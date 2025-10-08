@@ -422,6 +422,15 @@ const json = `
         "city": "Paris"
     },
     {
+        "date": "2024-11-29",
+        "artists": [
+            { "name": "Ratu$", "image": "ratus.jpg" },
+            { "name": "Blaz Pit", "image": "blazpit.jpg" }
+        ],
+        "location": "Gaîté Lyrique",
+        "city": "Paris"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
