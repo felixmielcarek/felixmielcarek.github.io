@@ -386,6 +386,15 @@ const json = `
         "festival": "Séquence Club"
     },
     {
+        "date": "2024-11-14",
+        "artists": [
+            { "name": "Luther", "image": "luther.jpg" },
+            { "name": "6ilverr", "image": "6ilverr.jpg" }
+        ],
+        "location": "Coopérative de Mai",
+        "city": "Clermont-Ferrand"
+    },
+    {
         "date": "2024-12-24",
         "artists": [
             { "name": "Sto", "image": "sto.jpg" },
