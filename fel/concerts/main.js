@@ -662,6 +662,16 @@ const json = `
         "festival": "Séquence Club",
         "location": "Dock B",
         "city": "Pantin"
+    },
+    {
+        "date": "2025-10-11",
+        "artists": [
+            { "name": "Arch", "image": "arch.jpg" },
+            { "name": "notinbed", "image": "notinbed.jpg" }
+        ],
+        "festival": "Sismic",
+        "location": "Coopérative de Mai",
+        "city": "Clermont-Ferrand"
     }
 ]
 `
