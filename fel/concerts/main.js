@@ -659,9 +659,8 @@ const json = `
             { "name": "Chavi", "image": "chavi.webp" },
             { "name": "OgLounis", "image": "oglounis.webp" }
         ],
-        "festival": "Séquence Club",
-        "location": "Dock B",
-        "city": "Pantin"
+        "location": "La Cigale",
+        "city": "Paris"
     },
     {
         "date": "2025-10-11",
@@ -672,6 +671,20 @@ const json = `
         "festival": "Sismic",
         "location": "Coopérative de Mai",
         "city": "Clermont-Ferrand"
+    },
+    {
+        "date": "2025-11-22",
+        "artists": [
+            { "name": "Irko", "image": "arch.jpg" },
+            { "name": "Alcatraz", "image": "arch.jpg" },
+            { "name": "Lili Castiglioni", "image": "arch.jpg" },
+            { "name": "ELIESG", "image": "arch.jpg" },
+            { "name": "Vendredear", "image": "arch.jpg" },
+            { "name": "Vilhelm", "image": "arch.jpg" },
+            { "name": "Ayegy", "image": "arch.jpg" },
+        ],
+        "location": "Le Trabendo",
+        "city": "Paris"
     }
 ]
 `
