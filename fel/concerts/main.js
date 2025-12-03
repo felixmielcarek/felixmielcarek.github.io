@@ -408,6 +408,7 @@ const json = `
             { "name": "Yume", "image": "yume.jpg" }
         ],
         "location": "Gaîté Lyrique",
+        "festival": "Rêves 11",
         "city": "Paris"
     },
     {
@@ -681,9 +682,28 @@ const json = `
             { "name": "ELIESG", "image": "arch.jpg" },
             { "name": "Vendredear", "image": "arch.jpg" },
             { "name": "Vilhelm", "image": "arch.jpg" },
-            { "name": "Ayegy", "image": "arch.jpg" },
+            { "name": "Ayegy", "image": "arch.jpg" }
         ],
         "location": "Le Trabendo",
+        "city": "Paris"
+    },
+    {
+        "date": "2025-11-28",
+        "artists": [
+            { "name": "COEURCO", "image": "arch.jpg" },
+            { "name": "PLEUR", "image": "arch.jpg" },
+            { "name": "32", "image": "arch.jpg" },
+            { "name": "encoreuneautre", "image": "arch.jpg" },
+            { "name": "8racks", "image": "arch.jpg" },
+            { "name": "Dries Bormans", "image": "arch.jpg" },
+            { "name": "bahamas", "image": "arch.jpg" },
+            { "name": "idée noire", "image": "arch.jpg" },
+            { "name": "Bloody Sanji", "image": "arch.jpg" },
+            { "name": "Yume", "image": "arch.jpg" },
+            { "name": "Lorenzi", "image": "arch.jpg" }
+        ],
+        "location": "Petit Bain",
+        "festival": "Rêves 15",
         "city": "Paris"
     }
 ]
