@@ -705,6 +705,15 @@ const json = `
         "location": "Petit Bain",
         "festival": "Rêves 15",
         "city": "Paris"
+    },
+    {
+        "date": "2025-12-16",
+        "artists": [
+            { "name": "32", "image": "32.jpg" }
+        ],
+        "location": "La Rotonde Stalingrad",
+        "festival": "Mosaïque N°12 - Launch Party",
+        "city": "Paris"
     }
 ]
 `
