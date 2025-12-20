@@ -714,6 +714,14 @@ const json = `
         "location": "La Rotonde Stalingrad",
         "festival": "Mosaïque N°12 - Launch Party",
         "city": "Paris"
+    },
+    {
+        "date": "2025-12-19",
+        "artists": [
+            { "name": "Nobodylikesbirdie", "image": "nobodylikesbirdie.jpg" }
+        ],
+        "location": "La Boule Noire",
+        "city": "Paris"
     }
 ]
 `
