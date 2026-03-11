@@ -233,37 +233,31 @@ class GitHubCarouselLoader {
     if (type === "university") {
       extraContent = `
                 <div class="d-flex gap-3 mb-2">
-                    <small class="text-muted">🎓 University Project</small>
+                    <small class="text-muted">Created: ${new Date(repo.created_at).toLocaleDateString()}</small>
                 </div>
                 <a href="${repo.html_url}" target="_blank" class="text-decoration-none">View Project →</a>
             `;
     } else if (type === "production") {
       extraContent = `
                 <div class="d-flex gap-3 mb-2">
-                    <small class="text-muted">⭐ ${repo.stargazers_count}</small>
-                    <small class="text-muted">🔀 ${repo.forks_count}</small>
+                    <small class="text-muted">Updated: ${new Date(repo.updated_at).toLocaleDateString()}</small>
                 </div>
                 <a href="${repo.html_url}" target="_blank" class="text-decoration-none">View Project →</a>
             `;
     } else if (type === "dev") {
-      // Calculate "progress" based on recent activity (mock for now)
-      const progress = Math.min(80, repo.stargazers_count * 20 + 40);
       extraContent = `
-                <div class="progress mb-2" style="height: 8px;">
-                    <div class="progress-bar" role="progressbar" style="width: ${progress}%;" 
-                         aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="d-flex gap-3 mb-2">
+                    <small class="text-muted">🐛 ${repo.open_issues_count} open issues</small>
                 </div>
-                <small class="text-muted">${progress}% Complete</small>
-                <div class="mt-2">
-                    <a href="${repo.html_url}" target="_blank" class="text-decoration-none small">View on GitHub →</a>
-                </div>
+                <a href="${repo.html_url}" target="_blank" class="text-decoration-none">View on GitHub →</a>
             `;
     } else if (type === "backlog") {
       extraContent = `
-                <span class="badge bg-warning text-dark">Planned</span>
-                <div class="mt-2">
-                    <a href="${repo.html_url}" target="_blank" class="text-decoration-none small">View on GitHub →</a>
+                <div class="d-flex gap-3 mb-2">
+                    <small class="text-muted">⭐ ${repo.stargazers_count}</small>
+                    <small class="text-muted">👁️ ${repo.watchers_count}</small>
                 </div>
+                <a href="${repo.html_url}" target="_blank" class="text-decoration-none small">View on GitHub →</a>
             `;
     }
 
