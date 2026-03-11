@@ -1,0 +1,76 @@
+/* Home page specific styles with Bootstrap */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.welcome {
+    margin-bottom: 60px;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.menu-item {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+
+.menu-item:hover {
+    border-color: #666;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.menu-item h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.menu-item p {
+    margin: 0;
+    color: #888;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .welcome h1 {
+        font-size: 2em;
+    }
+    
+    .menu-nav {
+        gap: 20px;
+    }
+}
