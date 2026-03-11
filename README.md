@@ -1,19 +1,3 @@
 # Portfelio
 
-Welcome to my portfolio, his purpose is to discover me and my projects if it's your intent.
-
-## Articles
-
-```
-Portfelio
-\
-|_ Fel
-  \
-  |_ Routines
-  |
-  |_ Concerts
-```
-
-## Fel
-
-It's me and everything related to my personal development.
+[Link to website construction roadmap](https://www.figma.com/board/3e1bdz0uogVl3Pql49cHFy/Portfelio?node-id=1-70&t=XSTc918sXK7byMcH-1)
