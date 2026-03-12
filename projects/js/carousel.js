@@ -257,6 +257,7 @@ class GitHubCarouselLoader {
                     <small class="text-muted">⭐ ${repo.stargazers_count}</small>
                     <small class="text-muted">👁️ ${repo.watchers_count}</small>
                 </div>
+                <small class="text-muted d-block mb-2">★ Star or watch to show interest!</small>
                 <a href="${repo.html_url}" target="_blank" class="text-decoration-none small">View on GitHub →</a>
             `;
     }
