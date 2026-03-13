@@ -1,320 +1,317 @@
 /* Concerts page styles */
 
-.main-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Back link styling */
-.back-link {
-  color: #c0c0c0;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-.back-link:hover {
-  color: #ffc0cb;
-  text-shadow: 0 0 10px rgba(255, 192, 203, 0.5);
-}
-
-/* Header section */
-.header {
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.05),
-    rgba(255, 192, 203, 0.05)
-  );
-  border: 2px solid rgba(192, 192, 192, 0.2);
-  border-radius: 20px;
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 40px rgba(255, 192, 203, 0.2);
-}
-
-.header h1 {
-  font-size: 3em;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffc0cb, #c0c0c0, #ff69b4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 2px;
-}
-
-.header p {
-  color: #e8e8e8;
-  margin-bottom: 0.5rem;
-}
-
-.header .text-muted {
-  color: #c0c0c0 !important;
+.me-page .page-header-card .page-title {
+    font-size: 3em;
+    margin-bottom: 1rem;
 }
 
 /* Statistics cards */
-.stats-row {
-  margin-top: 1.5rem;
-}
-
 .stat-card {
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.1),
-    rgba(255, 192, 203, 0.1)
-  );
-  border: 2px solid rgba(192, 192, 192, 0.2);
-  color: #e8e8e8;
-  border-radius: 15px;
-  padding: 1.25rem;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.1),
+        rgba(255, 192, 203, 0.1)
+    );
+    border: var(--ui-border);
+    color: #e8e8e8;
+    border-radius: var(--ui-radius);
+    padding: 1.25rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-  border-color: #ffc0cb;
-  box-shadow: 0 5px 20px rgba(255, 192, 203, 0.3);
-  transform: translateY(-3px);
+    border-color: #ffc0cb;
+    box-shadow: 0 5px 20px rgba(255, 192, 203, 0.3);
+    transform: translateY(-3px);
 }
 
 .stat-card h3 {
-  font-size: 2.5rem;
-  margin-bottom: 0.25rem;
-  color: #ffc0cb;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+    color: #ffc0cb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
 }
 
 .stat-card p {
-  margin: 0;
-  font-size: 2rem;
-  color: #c0c0c0;
-  font-weight: 400;
-  font-family: "Monsieur La Doulaise", cursive;
+    margin: 0;
+    font-size: 2rem;
+    color: #c0c0c0;
+    font-weight: 400;
+    font-family: "Monsieur La Doulaise", cursive;
 }
 
 /* Filter section */
 .filter-section {
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.05),
-    rgba(255, 192, 203, 0.05)
-  );
-  border: 2px solid rgba(192, 192, 192, 0.2);
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  backdrop-filter: blur(10px);
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.05),
+        rgba(255, 192, 203, 0.05)
+    );
+    border: var(--ui-border);
+    border-radius: var(--ui-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
 }
 
 .filter-section h5 {
-  color: #ffc0cb;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+    color: #ffc0cb;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .filter-section .btn {
-  margin: 0.25rem;
-  font-weight: 300;
+    margin: 0.25rem;
+    font-weight: 300;
 }
 
 /* Concert cards */
 .concert-card {
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.1),
-    rgba(255, 192, 203, 0.1)
-  );
-  border: 2px solid rgba(192, 192, 192, 0.2);
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.1),
+        rgba(255, 192, 203, 0.1)
+    );
+    border: var(--ui-border);
+    border-radius: var(--ui-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    height: 100%;
 }
 
 .concert-card:hover {
-  border-color: #ffc0cb;
-  transform: translateY(-5px);
-  box-shadow:
-    0 10px 40px rgba(255, 192, 203, 0.3),
-    0 0 20px rgba(192, 192, 192, 0.2);
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.15),
-    rgba(255, 192, 203, 0.15)
-  );
+    border-color: #ffc0cb;
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 40px rgba(255, 192, 203, 0.3),
+        0 0 20px rgba(192, 192, 192, 0.2);
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.15),
+        rgba(255, 192, 203, 0.15)
+    );
 }
 
 .concert-date {
-  display: inline-block;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 192, 203, 0.2),
-    rgba(192, 192, 192, 0.2)
-  );
-  border: 1px solid rgba(255, 192, 203, 0.4);
-  color: #ffc0cb;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+    display: inline-block;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 192, 203, 0.2),
+        rgba(192, 192, 192, 0.2)
+    );
+    border: 1px solid rgba(255, 192, 203, 0.4);
+    color: #ffc0cb;
+    padding: 0.5rem 1rem;
+    border-radius: var(--ui-radius-pill);
+    font-weight: 400;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
-.concert-info {
-  margin-bottom: 1rem;
+.concert-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.concert-info .info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  color: #e8e8e8;
-  font-weight: 300;
+.concert-header-left {
+    flex: 1;
 }
 
-.concert-info .info-item i {
-  margin-right: 0.5rem;
-  color: #ffc0cb;
-  width: 20px;
+.concert-header-right {
+    display: flex;
+    align-items: flex-start;
+}
+
+.concert-info,
+.concert-header-left {
+    margin-bottom: 1rem;
+}
+
+.concert-info .info-item,
+.concert-header-left .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #e8e8e8;
+    font-weight: 300;
+}
+
+.concert-info .info-item i,
+.concert-header-left .info-item i {
+    margin-right: 0.5rem;
+    color: #ffc0cb;
+    width: 20px;
 }
 
 /* Artists section */
 .artists-section {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 2px solid rgba(192, 192, 192, 0.1);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(192, 192, 192, 0.1);
 }
 
 .artists-title {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #c0c0c0;
-  margin-bottom: 0.75rem;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c0c0c0;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
 }
 
-.artist-badge {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.15),
-    rgba(255, 192, 203, 0.15)
-  );
-  border: 1px solid rgba(192, 192, 192, 0.3);
-  border-radius: 25px;
-  padding: 0.4rem 0.8rem;
-  margin: 0.25rem;
-  font-size: 0.85rem;
-  color: #e8e8e8;
-  transition: all 0.2s;
-  font-weight: 300;
+.artists-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
 }
 
-.artist-badge:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.2),
-    rgba(255, 192, 203, 0.2)
-  );
-  border-color: #ffc0cb;
-  color: #ffc0cb;
+.artist-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.15),
+        rgba(255, 192, 203, 0.15)
+    );
+    border: 1px solid rgba(192, 192, 192, 0.3);
+    border-radius: var(--ui-radius-md);
+    padding: 0.6rem 0.5rem;
+    min-height: 150px;
+    color: #e8e8e8;
+    transition: all 0.2s;
+    font-weight: 300;
+    text-align: center;
 }
 
-.artist-badge img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  object-fit: cover;
+.artist-tile:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.2),
+        rgba(255, 192, 203, 0.2)
+    );
+    border-color: #ffc0cb;
+    color: #ffc0cb;
+}
+
+.artist-tile img,
+.artist-avatar-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: var(--ui-radius-sm);
+    margin-bottom: 0.45rem;
+    object-fit: contain;
+    background: rgba(255, 192, 203, 0.08);
+}
+
+.artist-avatar-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 192, 203, 0.18);
+    border: 1px solid rgba(255, 192, 203, 0.35);
+    color: #ffc0cb;
+}
+
+.artist-name {
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 /* Concert notes */
 .concert-note {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 192, 203, 0.1),
-    rgba(192, 192, 192, 0.1)
-  );
-  border-left: 4px solid #ffc0cb;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  color: #e8e8e8;
-  font-weight: 300;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 192, 203, 0.1),
+        rgba(192, 192, 192, 0.1)
+    );
+    border-left: 4px solid #ffc0cb;
+    border-radius: var(--ui-radius-sm);
+    font-size: 0.9rem;
+    color: #e8e8e8;
+    font-weight: 300;
 }
 
 .concert-note i {
-  color: #ffc0cb;
+    color: #ffc0cb;
 }
 
 /* Buttons */
 .btn-outline-primary {
-  color: #c0c0c0;
-  border-color: rgba(192, 192, 192, 0.3);
-  background: transparent;
+    color: #c0c0c0;
+    border-color: rgba(192, 192, 192, 0.3);
+    background: transparent;
+    border-radius: var(--ui-radius-md);
 }
 
 .btn-outline-primary:hover {
-  color: #ffc0cb;
-  border-color: #ffc0cb;
-  background: rgba(255, 192, 203, 0.1);
+    color: #ffc0cb;
+    border-color: #ffc0cb;
+    background: rgba(255, 192, 203, 0.1);
 }
 
 .active-filter {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 192, 203, 0.3),
-    rgba(192, 192, 192, 0.3)
-  ) !important;
-  border-color: #ffc0cb !important;
-  color: #ffc0cb !important;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 192, 203, 0.3),
+        rgba(192, 192, 192, 0.3)
+    ) !important;
+    border-color: #ffc0cb !important;
+    color: #ffc0cb !important;
 }
 
 /* No results message */
 .no-results {
-  text-align: center;
-  padding: 3rem;
-  background: linear-gradient(
-    135deg,
-    rgba(192, 192, 192, 0.05),
-    rgba(255, 192, 203, 0.05)
-  );
-  border: 2px solid rgba(192, 192, 192, 0.2);
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.05),
+        rgba(255, 192, 203, 0.05)
+    );
+    border: var(--ui-border);
+    border-radius: var(--ui-radius);
+    backdrop-filter: blur(10px);
 }
 
 .no-results i {
-  font-size: 4rem;
-  color: rgba(192, 192, 192, 0.3);
-  margin-bottom: 1rem;
+    font-size: 4rem;
+    color: rgba(192, 192, 192, 0.3);
+    margin-bottom: 1rem;
 }
 
 .no-results h4 {
-  color: #ffc0cb;
-  font-size: 2rem;
-}
-
-.no-results .text-muted {
-  color: #c0c0c0 !important;
+    color: #ffc0cb;
+    font-size: 2rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2em;
-  }
+    .me-page .page-header-card .page-title {
+        font-size: 2em;
+    }
 
-  .stat-card h3 {
-    font-size: 1.8rem;
-  }
+    .concert-header {
+        flex-direction: column;
+    }
+
+    .artists-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stat-card h3 {
+        font-size: 1.8rem;
+    }
 }
