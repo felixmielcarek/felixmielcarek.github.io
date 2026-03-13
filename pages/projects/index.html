@@ -10,13 +10,15 @@
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../common.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/projects.css" />
   </head>
 
   <body>
     <header class="header text-center py-4 position-relative">
-      <a href="../index.html" class="back-link position-absolute start-0 ms-4"
+      <a
+        href="../../index.html"
+        class="back-link position-absolute start-0 ms-4"
         >← Back to Home</a
       >
       <h1>My Projects</h1>
@@ -42,12 +44,15 @@
       <!-- Production Projects Carousel -->
       <section class="mb-5">
         <div class="carousel-container p-4 rounded">
-          <h2 class="text-center mb-3">🚀 Production</h2>
+          <h2 class="text-center mb-3">Production</h2>
           <p class="text-center text-muted mb-4">
             Live projects currently in production
           </p>
 
           <div id="prodCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <!-- Will be populated by JavaScript -->
+            </div>
             <div class="carousel-inner">
               <!-- Will be populated by JavaScript -->
               <div class="carousel-item active">
@@ -90,12 +95,15 @@
       <!-- Development Projects Carousel -->
       <section class="mb-5">
         <div class="carousel-container p-4 rounded">
-          <h2 class="text-center mb-3">⚙️ Development</h2>
+          <h2 class="text-center mb-3">Development</h2>
           <p class="text-center text-muted mb-4">
             Projects currently under active development
           </p>
 
           <div id="devCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <!-- Will be populated by JavaScript -->
+            </div>
             <div class="carousel-inner">
               <!-- Will be populated by JavaScript -->
               <div class="carousel-item active">
@@ -138,20 +146,29 @@
       <!-- Backlog Projects Carousel -->
       <section class="mb-5">
         <div class="carousel-container p-4 rounded">
-          <h2 class="text-center mb-3">📋 Backlog</h2>
+          <h2 class="text-center mb-3">Backlog</h2>
           <p class="text-center text-muted mb-4">
             Planned projects and future ideas
           </p>
-          <div class="alert alert-info text-center mx-auto" style="max-width: 800px;" role="alert">
-            <strong>💡 Help me prioritize!</strong><br>
+          <div
+            class="alert alert-info text-center mx-auto"
+            style="max-width: 800px"
+            role="alert"
+          >
+            <strong>Help me prioritize!</strong><br />
             <small>
-              ⭐ <strong>Star</strong> a project if you're interested in it — 
-              👁️ <strong>Watch</strong> it if you want to actively follow development.<br>
-              The more interest a project gets, the sooner I'll move it to active development!
+              <strong>Star</strong> a project if you're interested in it —
+              <strong>Watch</strong> it if you want to actively follow
+              development.<br />
+              The more interest a project gets, the sooner I'll move it to
+              active development!
             </small>
           </div>
 
           <div id="backlogCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <!-- Will be populated by JavaScript -->
+            </div>
             <div class="carousel-inner">
               <!-- Will be populated by JavaScript -->
               <div class="carousel-item active">
@@ -194,12 +211,15 @@
       <!-- University Projects Carousel -->
       <section class="mb-5">
         <div class="carousel-container p-4 rounded">
-          <h2 class="text-center mb-3">🎓 University</h2>
+          <h2 class="text-center mb-3">University</h2>
           <p class="text-center text-muted mb-4">
             Academic projects from university courses
           </p>
 
           <div id="uniCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <!-- Will be populated by JavaScript -->
+            </div>
             <div class="carousel-inner">
               <!-- Will be populated by JavaScript -->
               <div class="carousel-item active">
@@ -247,6 +267,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- GitHub Carousel Loader -->
-    <script src="js/carousel.js"></script>
+    <script src="../../assets/js/carousel.js"></script>
   </body>
 </html>

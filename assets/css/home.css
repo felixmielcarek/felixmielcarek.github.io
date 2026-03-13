@@ -14,17 +14,20 @@
 }
 
 .welcome h1 {
-    font-size: 3em;
+    font-size: 4.5em;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, #fff, #888);
+    background: linear-gradient(135deg, #ffc0cb, #c0c0c0, #ff69b4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 192, 203, 0.3);
+    letter-spacing: 2px;
 }
 
 .welcome p {
     font-size: 1.2em;
-    color: #aaa;
+    color: #c0c0c0;
+    font-weight: 300;
 }
 
 .menu-nav {
@@ -36,38 +39,43 @@
 }
 
 .menu-item {
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(255, 192, 203, 0.1));
     padding: 30px;
-    border-radius: 10px;
-    border: 2px solid #333;
+    border-radius: 15px;
+    border: 2px solid rgba(192, 192, 192, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
     display: block;
-    color: white;
+    color: #e8e8e8;
+    backdrop-filter: blur(10px);
 }
 
 .menu-item:hover {
-    border-color: #666;
+    border-color: #ffc0cb;
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-    color: white;
+    box-shadow: 0 10px 40px rgba(255, 192, 203, 0.3),
+                0 0 20px rgba(192, 192, 192, 0.2);
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(255, 192, 203, 0.15));
+    color: #ffc0cb;
 }
 
 .menu-item h2 {
     margin: 0 0 10px 0;
-    font-size: 1.8em;
-    color: white;
+    font-size: 2.5em;
+    color: #ffc0cb;
+    letter-spacing: 1px;
 }
 
 .menu-item p {
     margin: 0;
-    color: #888;
+    color: #c0c0c0;
     font-size: 0.9em;
+    font-weight: 300;
 }
 
 @media (max-width: 600px) {
     .welcome h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .menu-nav {
