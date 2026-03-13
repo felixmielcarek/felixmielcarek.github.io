@@ -8,12 +8,12 @@ const artistsData = {
     "8racks": { name: "8racks" },
     abbath: { name: "Abbath", deezerId: 7683228 },
     advm: { name: "ADVM", deezerId: 5463376 },
-    akissi: { name: "Akissi", deezerId: 146935412 },
-    "al-walid": { name: "Al Walid", deezerId: 265449832 },
+    akissi: { name: "AKISSI", deezerId: 146935412 },
+    "al-walid": { name: "Al-Walid", deezerId: 265449832 },
     alcatraz: { name: "Alcatraz" },
     alcest: { name: "Alcest", deezerId: 16329 },
     alestorm: { name: "Alestorm", deezerId: 125436 },
-    altj: { name: "Alt J", deezerId: 1606315 },
+    altj: { name: "alt-J", deezerId: 1606315 },
     angele: { name: "Angèle", deezerId: 1042268 },
     "angsty-camboyz-revenge": {
         name: "Angsty Camboyz Revenge",
@@ -21,24 +21,24 @@ const artistsData = {
     },
     "ano-poli": { name: "Ano poli" },
     arch: { name: "Arch" },
-    asheo: { name: "Asheo", deezerId: 14509319 },
+    asheo: { name: "Ashéo", deezerId: 14509319 },
     ayegy: { name: "Ayegy" },
-    "baby-neelou": { name: "Baby Neelou", deezerId: 88726552 },
-    babysolo33: { name: "Babysolo33", deezerId: 57754602 },
+    "baby-neelou": { name: "BABY NEELOU", deezerId: 88726552 },
+    babysolo33: { name: "BabySolo33", deezerId: 57754602 },
     bahamas: { name: "bahamas", deezerId: 0 },
     bandikoot: { name: "Bandikoot", deezerId: 71503942 },
-    bara8: { name: "Bara8!", deezerId: 181638667 },
-    "bb-jacques": { name: "BB Jacques", deezerId: 107059632 },
+    bara8: { name: "BARA8!", deezerId: 181638667 },
+    "bb-jacques": { name: "B.B. Jacques", deezerId: 107059632 },
     bekar: { name: "Bekar", deezerId: 4626477 },
-    "ben-plg": { name: "Ben PLG", deezerId: 67211132 },
+    "ben-plg": { name: "BEN plg", deezerId: 67211132 },
     berywam: { name: "Berywam", deezerId: 12546212 },
     "biffty-julius": { name: "Biffty & Julius", deezerId: 8578780 },
-    "bigflo-oli": { name: "Bigflo et Oli", deezerId: 5497121 },
+    "bigflo-oli": { name: "Bigflo & Oli", deezerId: 5497121 },
     "blaz-pit": { name: "Blaz Pit", deezerId: 5289599 },
-    "bloody-sanji": { name: "Bloody$anji", deezerId: 61187702 },
+    "bloody-sanji": { name: "BLOODY$ANJI", deezerId: 61187702 },
     "brutal-sphincter": { name: "Brutal Sphincter", deezerId: 58051582 },
-    bushi: { name: "Bushi", deezerId: 15063429 },
-    "caballero-jeanjass": { name: "Caballero & Jeanjass", deezerId: 10147346 },
+    bushi: { name: "BU$HI", deezerId: 15063429 },
+    "caballero-jeanjass": { name: "Caballero & JeanJass", deezerId: 10147346 },
     cadaver: { name: "Cadaver", deezerId: 1220517 },
     chavi: { name: "Chavi", deezerId: 268210952 },
     coeurco: { name: "COEURCO", deezerId: 222015095 },
@@ -48,7 +48,7 @@ const artistsData = {
     damso: { name: "Damso", deezerId: 9197980 },
     dara: { name: "Dara", deezerId: 65223022 },
     "deep-purple": { name: "Deep Purple", deezerId: 864 },
-    "deelee-s": { name: "Deelee S", deezerId: 146378152 },
+    "deelee-s": { name: "DEELEE S", deezerId: 146378152 },
     "deelee-s-le-double": { name: "Deelee S & Le Double", deezerId: 0 },
     "di-meh-makala-slimka": { name: "Di-meh & Makala & Slimka", deezerId: 0 },
     dinos: { name: "Dinos", deezerId: 292949 },
@@ -60,144 +60,143 @@ const artistsData = {
         deezerId: 0,
     },
     "douze-deluge": { name: "Douze Déluge", deezerId: 198304697 },
-    down: { name: "Down", deezerId: 0 },
-    "dries-bormans": { name: "Dries Bormans", deezerId: 0 },
-    edge: { name: "Edge", deezerId: 0 },
-    eliesg: { name: "ELIESG", deezerId: 0 },
-    eloi: { name: "Eloi", deezerId: 0 },
-    elyslime: { name: "elyslime!", deezerId: 0 },
-    encoreuneautre: { name: "encoreuneautre", deezerId: 0 },
-    flkn: { name: "Flkn", deezerId: 0 },
-    gal: { name: "GAL", deezerId: 0 },
-    gemen: { name: "Gemen", deezerId: 0 },
-    georgio: { name: "Georgio", deezerId: 0 },
-    giuseppe: { name: "Giuseppe", deezerId: 0 },
-    guiseppe: { name: "Guiseppe", deezerId: 0 },
-    gojira: { name: "Gojira", deezerId: 0 },
-    grosmo: { name: "Gros Mo", deezerId: 0 },
-    "h-jeune-crack": { name: "H Jeune Crack", deezerId: 0 },
-    "heaven-shall-burn": { name: "Heaven Shall Burn", deezerId: 0 },
-    helheim: { name: "Helheim", deezerId: 0 },
-    heloim: { name: "Heloim", deezerId: 0 },
-    houdi: { name: "Houdi", deezerId: 0 },
-    huntrill: { name: "Huntrill", deezerId: 0 },
-    "idee-noire": { name: "idée noire", deezerId: 0 },
-    igorrr: { name: "Igorrr", deezerId: 0 },
-    "in-other-climes": { name: "In Other Climes", deezerId: 0 },
-    infinit: { name: "Infinit", deezerId: 0 },
-    invisions: { name: "Invisions", deezerId: 0 },
-    irko: { name: "Irko", deezerId: 0 },
+    down: { name: "DOWN", deezerId: 7274 },
+    "dries-bormans": { name: "Dries Bormans", deezerId: 111121002 },
+    edge: { name: "EDGE", deezerId: 95149082 },
+    eliesg: { name: "ELIESG", deezerId: 372715931 },
+    eloi: { name: "Eloi", deezerId: 6151932 },
+    elyslime: { name: "elyslime!", deezerId: 147958552 },
+    encoreuneautre: { name: "encore une autre", deezerId: 309692451 },
+    flkn: { name: "FLKN", deezerId: 137443572 },
+    gal: { name: "GAL", deezerId: 304485351 },
+    gemen: { name: "Gemen", deezerId: 1056523 },
+    georgio: { name: "Georgio", deezerId: 183727 },
+    giuseppe: { name: "Giuseppe", deezerId: 270323702 },
+    gojira: { name: "Gojira", deezerId: 2993 },
+    grosmo: { name: "Gros Mo", deezerId: 5246295 },
+    "h-jeune-crack": { name: "H JeuneCrack", deezerId: 104543062 },
+    "heaven-shall-burn": { name: "Heaven Shall Burn", deezerId: 9494 },
+    helheim: { name: "Helheim", deezerId: 573324 },
+    heloim: { name: "HeloÏm", deezerId: 101490272 },
+    houdi: { name: "HOUDI", deezerId: 48443532 },
+    huntrill: { name: "Huntrill", deezerId: 13797255 },
+    "idee-noire": { name: "Idée Noire.", deezerId: 14400281 },
+    igorrr: { name: "Igorrr", deezerId: 1025520 },
+    "in-other-climes": { name: "In Other Climes", deezerId: 399035 },
+    infinit: { name: "Infinit'", deezerId: 5531672 },
+    invisions: { name: "InVisions", deezerId: 8282632 },
+    irko: { name: "Irko", deezerId: 9483292 },
     "isha-limsa": { name: "Isha & Limsa", deezerId: 0 },
-    jade: { name: "Jäde", deezerId: 0 },
-    jaymee: { name: "Jaymee", deezerId: 0 },
-    "jean-paul-groove": { name: "Jean Paul Groove", deezerId: 0 },
-    "jeune-lion": { name: "Jeune Lion", deezerId: 0 },
-    "jeune-mort": { name: "Jeune Mort", deezerId: 0 },
-    jolagreen23: { name: "Jolagreen23", deezerId: 0 },
-    josman: { name: "Josman", deezerId: 0 },
-    jrk19: { name: "Jrk19", deezerId: 0 },
-    kaaris: { name: "Kaaris", deezerId: 0 },
-    kavinsky: { name: "Kavinsky", deezerId: 0 },
-    "kay-the-prodigy": { name: "Kay The Prodigy", deezerId: 0 },
-    keroue: { name: "Keroué", deezerId: 0 },
-    korn: { name: "Korn", deezerId: 0 },
-    "la-feve": { name: "La Fève", deezerId: 0 },
-    lamomali: { name: "Lamomali", deezerId: 0 },
-    landmvrks: { name: "Landmvrks", deezerId: 0 },
-    laylow: { name: "Laylow", deezerId: 0 },
-    "le-double": { name: "Le Double", deezerId: 0 },
-    "leo-svr": { name: "Leo SVR", deezerId: 0 },
-    "lili-castiglioni": { name: "Lili Castiglioni", deezerId: 0 },
-    lomepal: { name: "Lomepal", deezerId: 0 },
-    "lord-esperanza": { name: "Lord Esperanza", deezerId: 0 },
-    lorenzi: { name: "Lorenzi", deezerId: 0 },
-    lovarran: { name: "Lovarran", deezerId: 0 },
-    lujipeka: { name: "Lujipeka", deezerId: 0 },
-    luther: { name: "Luther", deezerId: 0 },
+    jade: { name: "Jäde", deezerId: 78534732 },
+    jaymee: { name: "Jaymee", deezerId: 1705266 },
+    "jean-paul-groove": { name: "Jean-Paul Groove", deezerId: 140967152 },
+    "jeune-lion": { name: "Jeune Lion", deezerId: 138959612 },
+    "jeune-mort": { name: "Jeune Mort", deezerId: 168464897 },
+    jolagreen23: { name: "Jolagreen23", deezerId: 132179322 },
+    josman: { name: "Josman", deezerId: 7365500 },
+    jrk19: { name: "JRK 19", deezerId: 115427322 },
+    kaaris: { name: "Kaaris", deezerId: 388973 },
+    kavinsky: { name: "Kavinsky", deezerId: 13358 },
+    "kay-the-prodigy": { name: "Kay The Prodigy", deezerId: 141554662 },
+    keroue: { name: "Keroué", deezerId: 5288874 },
+    korn: { name: "KoЯn", deezerId: 1327 },
+    "la-feve": { name: "La Fève", deezerId: 102204242 },
+    lamomali: { name: "Lamomali", deezerId: 299457271 },
+    landmvrks: { name: "LANDMVRKS", deezerId: 9985838 },
+    laylow: { name: "Laylow", deezerId: 4510044 },
+    "le-double": { name: "LEDOUBLE", deezerId: 166377407 },
+    "leo-svr": { name: "Leo SVR", deezerId: 129399072 },
+    "lili-castiglioni": { name: "Lili Castiglioni", deezerId: 175631877 },
+    lomepal: { name: "Lomepal", deezerId: 5111084 },
+    "lord-esperanza": { name: "Lord Esperanza", deezerId: 11193368 },
+    lorenzi: { name: "Lorenzi", deezerId: 5176955 },
+    lovarran: { name: "Lovarran", deezerId: 131292122 },
+    lujipeka: { name: "Lujipeka", deezerId: 7172552 },
+    luther: { name: "Luther", deezerId: 161626742 },
     "luther-collab": {
         name: "Luther & Rounhaa & Abel31 & Amne & Irko & Süblime",
         deezerId: 0,
     },
-    makala: { name: "Makala", deezerId: 0 },
-    mandyspie: { name: "Mandyspie", deezerId: 0 },
-    megadeath: { name: "Megadeath", deezerId: 0 },
-    mordred: { name: "Mordred", deezerId: 0 },
-    "myth-syzer": { name: "Myth Syzer", deezerId: 0 },
-    nekfeu: { name: "Nekfeu", deezerId: 0 },
-    nes: { name: "Nes", deezerId: 0 },
-    nobodylikesbirdie: { name: "Nobodylikesbirdie", deezerId: 0 },
-    nocif: { name: "Nocif", deezerId: 0 },
-    notinbed: { name: "notinbed", deezerId: 0 },
-    nusky: { name: "Nusky", deezerId: 0 },
-    oboy: { name: "Oboy", deezerId: 0 },
-    oglounis: { name: "OgLounis", deezerId: 0 },
-    opeth: { name: "Opeth", deezerId: 0 },
-    orelsan: { name: "Orelsan", deezerId: 0 },
-    peterparker69: { name: "Peterparker69", deezerId: 0 },
-    "philippe-katerine": { name: "Philippe Katerine", deezerId: 0 },
-    pleur: { name: "PLEUR", deezerId: 0 },
-    plk: { name: "PLK", deezerId: 0 },
-    "polo-pan": { name: "Polo & Pan", deezerId: 0 },
-    pomme: { name: "Pomme", deezerId: 0 },
-    "prince-waly": { name: "Prince Waly", deezerId: 0 },
-    "ptite-soeur": { name: "Ptite Soeur", deezerId: 0 },
-    ramirez: { name: "Ramirez", deezerId: 0 },
-    ratus: { name: "Ratu$", deezerId: 0 },
-    "rectal-smegma": { name: "Rectal Smegma", deezerId: 0 },
+    makala: { name: "Makala", deezerId: 536194 },
+    mandyspie: { name: "Mandyspie", deezerId: 129618942 },
+    megadeath: { name: "Megadeth", deezerId: 3487 },
+    mordred: { name: "mordred", deezerId: 260801 },
+    "myth-syzer": { name: "Myth Syzer", deezerId: 4133659 },
+    nekfeu: { name: "Nekfeu", deezerId: 1412564 },
+    nes: { name: "NeS", deezerId: 69178362 },
+    nobodylikesbirdie: { name: "Nobodylikesbirdie", deezerId: 173804587 },
+    nocif: { name: "Nocif", deezerId: 89185 },
+    notinbed: { name: "notinbed", deezerId: 13909369 },
+    nusky: { name: "Nusky", deezerId: 11234719 },
+    oboy: { name: "OBOY", deezerId: 4986771 },
+    oglounis: { name: "OgLounis", deezerId: 78294182 },
+    opeth: { name: "Opeth", deezerId: 2814 },
+    orelsan: { name: "Orelsan", deezerId: 259467 },
+    peterparker69: { name: "Peterparker69", deezerId: 157878062 },
+    "philippe-katerine": { name: "Philippe Katerine", deezerId: 281496 },
+    pleur: { name: "PLEUR", deezerId: 291410281 },
+    plk: { name: "PLK", deezerId: 1479842 },
+    "polo-pan": { name: "Polo & Pan", deezerId: 5400149 },
+    pomme: { name: "Pomme", deezerId: 5382747 },
+    "prince-waly": { name: "Prince Waly", deezerId: 6745115 },
+    "ptite-soeur": { name: "Ptite Soeur", deezerId: 130998972 },
+    ramirez: { name: "Ramirez", deezerId: 115756 },
+    ratus: { name: "Ratu$", deezerId: 59563612 },
+    "rectal-smegma": { name: "Rectal Smegma", deezerId: 204502 },
     "regarde-les-hommes-tomber": {
-        name: "Regarde les hommes tomber",
-        deezerId: 0,
+        name: "Regarde Les Hommes Tomber",
+        deezerId: 4366510,
     },
-    riles: { name: "Riles", deezerId: 0 },
-    "roland-cristal": { name: "Roland Cristal", deezerId: 0 },
-    "romain-play": { name: "Romain Play", deezerId: 0 },
-    "romeo-elvis": { name: "Roméo Elvis", deezerId: 0 },
-    romsii: { name: "Romsii", deezerId: 0 },
-    "salut-cest-cool": { name: "Salut c'est cool", deezerId: 0 },
-    sch: { name: "SCH", deezerId: 0 },
-    "selug-senar": { name: "Selug & $enar", deezerId: 0 },
-    sepultura: { name: "Sepultura", deezerId: 0 },
-    sheldon: { name: "Sheldon", deezerId: 0 },
-    sheng: { name: "Sheng", deezerId: 0 },
-    shooda: { name: "Shooda", deezerId: 0 },
+    riles: { name: "Rilès", deezerId: 4521369 },
+    "roland-cristal": { name: "Roland Cristal", deezerId: 73637842 },
+    "romain-play": { name: "Romain Play", deezerId: 7691392 },
+    "romeo-elvis": { name: "Roméo Elvis", deezerId: 7961408 },
+    romsii: { name: "Romsii", deezerId: 118643972 },
+    "salut-cest-cool": { name: "Salut C'est Cool", deezerId: 7802522 },
+    sch: { name: "SCH", deezerId: 162665 },
+    "selug-senar": { name: "Selug & $enar", deezerId: 66468592 },
+    sepultura: { name: "Sepultura", deezerId: 632 },
+    sheldon: { name: "Sheldon", deezerId: 173048 },
+    sheng: { name: "Sheng", deezerId: 1242216 },
+    shooda: { name: "Shooda", deezerId: 14340053 },
     silence: { name: "Silence", deezerId: 0 },
-    slimka: { name: "Slimka", deezerId: 0 },
-    "so-la-lune": { name: "So La Lune", deezerId: 0 },
-    sopico: { name: "Sopico", deezerId: 0 },
-    steban: { name: "Steban", deezerId: 0 },
-    sto: { name: "Sto", deezerId: 0 },
-    "super-parquet": { name: "Super Parquet", deezerId: 0 },
-    sxmpra: { name: "Sxmpra", deezerId: 0 },
-    th: { name: "TH", deezerId: 0 },
-    thahomey: { name: "thaHomey", deezerId: 0 },
-    thea: { name: "Théa", deezerId: 0 },
-    theodora: { name: "Théodora", deezerId: 0 },
-    tif: { name: "Tif", deezerId: 0 },
-    toma: { name: "toma!", deezerId: 0 },
-    "tommy-cash": { name: "Tommy Cash", deezerId: 0 },
-    toothpick: { name: "Toothpick", deezerId: 0 },
-    ucyll: { name: "Ucyll", deezerId: 0 },
-    vald: { name: "Vald", deezerId: 0 },
-    "varnish-la-piscine": { name: "Varnish la piscine", deezerId: 0 },
+    slimka: { name: "Slimka", deezerId: 12121824 },
+    "so-la-lune": { name: "So La Lune", deezerId: 68553672 },
+    sopico: { name: "Sopico", deezerId: 10615109 },
+    steban: { name: "Steban", deezerId: 91974 },
+    sto: { name: "STO", deezerId: 83664732 },
+    "super-parquet": { name: "Super Parquet", deezerId: 10019168 },
+    sxmpra: { name: "Sxmpra", deezerId: 100588482 },
+    th: { name: "TH", deezerId: 219251975 },
+    thahomey: { name: "thaHomey", deezerId: 13337035 },
+    thea: { name: "THÉA", deezerId: 195760897 },
+    theodora: { name: "Theodora", deezerId: 13820325 },
+    tif: { name: "TIF", deezerId: 9430902 },
+    toma: { name: "toma!", deezerId: 348145031 },
+    "tommy-cash": { name: "Tommy Cash", deezerId: 178856 },
+    toothpick: { name: "Toothpick", deezerId: 985637 },
+    ucyll: { name: "Ucyll", deezerId: 93804812 },
+    vald: { name: "Vald", deezerId: 5175734 },
+    "varnish-la-piscine": { name: "Varnish La Piscine", deezerId: 12121826 },
     vendredear: { name: "Vendredear", deezerId: 0 },
-    vilhelm: { name: "Vilhelm", deezerId: 0 },
-    "vladimir-cauchemar": { name: "Vladimir Cauchemar", deezerId: 0 },
-    "von-bikrav": { name: "Von Bikräv", deezerId: 0 },
+    vilhelm: { name: "Vilhelm.", deezerId: 128462002 },
+    "vladimir-cauchemar": { name: "Vladimir Cauchemar", deezerId: 13682095 },
+    "von-bikrav": { name: "Von Bikräv", deezerId: 11674147 },
     "wagahai-is-neko": { name: "Wagahai is neko", deezerId: 0 },
-    "wallace-cleaver": { name: "Wallace Cleaver", deezerId: 0 },
-    "walls-of-jericho": { name: "Walls of Jericho", deezerId: 0 },
-    "while-she-sleeps": { name: "While she sleeps", deezerId: 0 },
-    winnterzuko: { name: "Winnterzuko", deezerId: 0 },
+    "wallace-cleaver": { name: "Wallace Cleaver", deezerId: 52375982 },
+    "walls-of-jericho": { name: "Walls of Jericho", deezerId: 673 },
+    "while-she-sleeps": { name: "While She Sleeps", deezerId: 403781 },
+    winnterzuko: { name: "winnterzuko", deezerId: 88895962 },
     "woody-collab": {
         name: "Woody & Franz Keloh & Berlam & Mac the fire",
         deezerId: 0,
     },
-    "zaho-de-sagazan": { name: "Zaho de Sagazan", deezerId: 0 },
-    zamdane: { name: "Zamdane", deezerId: 0 },
-    zeu: { name: "Zeu", deezerId: 0 },
-    zinee: { name: "Zinée", deezerId: 0 },
-    zola: { name: "Zola", deezerId: 0 },
-    zoomy: { name: "Zoomy", deezerId: 0 },
+    "zaho-de-sagazan": { name: "Zaho de Sagazan", deezerId: 112645512 },
+    zamdane: { name: "Zamdane", deezerId: 13152245 },
+    zeu: { name: "Zeu", deezerId: 10848422 },
+    zinee: { name: "Zinee", deezerId: 84898762 },
+    zola: { name: "Zola", deezerId: 13962203 },
+    zoomy: { name: "Zoomy", deezerId: 87611072 },
     yume: { name: "Yume", deezerId: 0 },
 };
 
@@ -502,7 +501,7 @@ const concertsData = [
         artists: [
             "peterparker69",
             "wagahai-is-neko",
-            "bloody-sanji-alt",
+            "bloody-sanji",
             "6ilverr",
             "ucyll",
             "shooda",
@@ -571,7 +570,7 @@ const concertsData = [
     },
     {
         date: "2025-01-24",
-        artists: ["al-walid", "guiseppe", "leo-svr", "myth-syzer"],
+        artists: ["al-walid", "giuseppe", "leo-svr", "myth-syzer"],
         location: "Petit Bain",
         city: "Paris",
         festival: "Séquence Club",
@@ -744,23 +743,98 @@ const concertsData = [
 
 let currentFilter = "all";
 let enrichedArtistsMap = new Map();
-let isLoadingArtists = true;
+
+function getTopArtists(limit = 10) {
+    const appearances = new Map();
+
+    concertsData.forEach((concert) => {
+        concert.artists.forEach((artistId) => {
+            appearances.set(artistId, (appearances.get(artistId) || 0) + 1);
+        });
+    });
+
+    return Array.from(appearances.entries())
+        .map(([artistId, count]) => ({
+            artistId,
+            count,
+            artist: artistsData[artistId],
+        }))
+        .filter(({ artist }) => Boolean(artist))
+        .sort((left, right) => {
+            if (right.count !== left.count) {
+                return right.count - left.count;
+            }
+
+            return left.artist.name.localeCompare(right.artist.name);
+        })
+        .slice(0, limit);
+}
+
+function getArtistDisplayState(artist) {
+    let imagePath = "";
+    let displayName = artist.name;
+    let useSkeleton = false;
+
+    if (artist.deezerId) {
+        const enrichedArtist = enrichedArtistsMap.get(artist.deezerId);
+        if (enrichedArtist) {
+            if (enrichedArtist.image) {
+                imagePath = enrichedArtist.image;
+            }
+            if (enrichedArtist.name) {
+                displayName = enrichedArtist.name;
+            }
+        } else {
+            useSkeleton = true;
+        }
+    }
+
+    return {
+        deezerId: artist.deezerId,
+        imagePath,
+        displayName,
+        useSkeleton,
+    };
+}
+
+function getArtistMediaHTML({ imagePath, displayName, useSkeleton }) {
+    if (useSkeleton) {
+        return `<div class="artist-img-skeleton"></div>`;
+    }
+
+    if (imagePath) {
+        return `<img src="${imagePath}" alt="${displayName}" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'artist-avatar-placeholder', textContent:'?' }))">`;
+    }
+
+    return `<div class="artist-avatar-placeholder">?</div>`;
+}
 
 // Initialize the page
 async function init() {
     calculateStats();
+    renderTopArtists();
     generateYearFilters();
     setupFilterListeners();
 
-    // Show loading state
-    showLoadingState();
+    // Render immediately with skeleton placeholders for images
+    renderConcerts();
 
-    // Preload artist data from Deezer API
+    // Preload artist data from Deezer API progressively
     if (typeof deezerAPI !== "undefined") {
         try {
-            // Pass the artistsData object directly
-            enrichedArtistsMap = await deezerAPI.preloadAllArtists(artistsData);
-            console.log("✓ Artist images loaded from Deezer API");
+            const topArtistDeezerIds = getTopArtists()
+                .map(({ artist }) => artist.deezerId)
+                .filter(Boolean);
+
+            enrichedArtistsMap = await deezerAPI.preloadAllArtists(
+                artistsData,
+                (deezerId, enrichedArtist) => {
+                    enrichedArtistsMap.set(deezerId, enrichedArtist);
+                    updateArtistTilesForId(deezerId, enrichedArtist);
+                },
+                topArtistDeezerIds,
+            );
+            console.log("✓ All artist images loaded from Deezer API");
         } catch (error) {
             console.warn(
                 "Failed to load from Deezer API, using manual images:",
@@ -768,22 +842,77 @@ async function init() {
             );
         }
     }
-
-    isLoadingArtists = false;
-    renderConcerts();
 }
 
-// Show loading state
-function showLoadingState() {
-    const container = document.getElementById("concerts-container");
-    container.innerHTML = `
-    <div class="col-12 text-center py-5">
-      <div class="spinner-border" role="status" style="color: #ffc0cb">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-      <p class="mt-3">Loading artist images from Deezer...</p>
-    </div>
-  `;
+// Update all rendered tiles for a given Deezer ID when its data arrives
+function updateArtistTilesForId(deezerId, enrichedArtist) {
+    document
+        .querySelectorAll(`[data-deezer-id="${deezerId}"]`)
+        .forEach((tile) => {
+            // Update name
+            const nameSpan = tile.querySelector(
+                ".artist-name, .top-artist-name",
+            );
+            if (nameSpan && enrichedArtist.name) {
+                nameSpan.textContent = enrichedArtist.name;
+            }
+
+            // Replace skeleton/placeholder with image or fallback
+            const target =
+                tile.querySelector(".artist-img-skeleton") ||
+                tile.querySelector("img, .artist-avatar-placeholder");
+            if (!target) return;
+
+            if (enrichedArtist.image) {
+                const img = document.createElement("img");
+                img.src = enrichedArtist.image;
+                img.alt = enrichedArtist.name || "";
+                img.className = "artist-img-entering";
+                img.onerror = () =>
+                    img.replaceWith(
+                        Object.assign(document.createElement("div"), {
+                            className: "artist-avatar-placeholder",
+                            textContent: "?",
+                        }),
+                    );
+                img.onload = () => img.classList.add("artist-img-loaded");
+                target.replaceWith(img);
+            } else {
+                target.replaceWith(
+                    Object.assign(document.createElement("div"), {
+                        className: "artist-avatar-placeholder",
+                        textContent: "?",
+                    }),
+                );
+            }
+        });
+}
+
+function renderTopArtists() {
+    const container = document.getElementById("top-artists-list");
+    if (!container) return;
+
+    const topArtists = getTopArtists();
+
+    container.innerHTML = topArtists
+        .map(({ count, artist }) => {
+            const { deezerId, imagePath, displayName, useSkeleton } =
+                getArtistDisplayState(artist);
+            const deezerAttr = deezerId ? `data-deezer-id="${deezerId}"` : "";
+
+            return `
+                <article class="top-artist-card" ${deezerAttr}>
+                    <div class="top-artist-photo">
+                        <div class="top-artist-badge">${count}</div>
+                        ${getArtistMediaHTML({ imagePath, displayName, useSkeleton })}
+                    </div>
+                    <div class="top-artist-content">
+                        <div class="top-artist-name">${displayName}</div>
+                    </div>
+                </article>
+            `;
+        })
+        .join("");
 }
 
 // Calculate statistics
@@ -887,25 +1016,22 @@ function renderConcerts() {
                 return;
             }
 
-            // Get artist image from Deezer API only
-            let imagePath = "";
+            const { deezerId, imagePath, displayName, useSkeleton } =
+                getArtistDisplayState(artist);
 
-            if (artist.deezerId) {
-                const enrichedArtist = enrichedArtistsMap.get(artist.deezerId);
-                if (enrichedArtist && enrichedArtist.image) {
-                    imagePath = enrichedArtist.image;
-                }
+            if (!deezerId) {
+                console.info(
+                    `[Concerts] No image available for artist "${artist.name}" (no Deezer ID)`,
+                );
             }
+
+            const deezerAttr = deezerId ? `data-deezer-id="${deezerId}"` : "";
 
             // Build artist tile (image + name below)
             artistsHTML += `
-            <div class="artist-tile">
-              ${
-                  imagePath
-                      ? `<img src="${imagePath}" alt="${artist.name}" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'artist-avatar-placeholder', textContent:'?' }))">`
-                      : `<div class="artist-avatar-placeholder">?</div>`
-              }
-              <span class="artist-name">${artist.name}</span>
+            <div class="artist-tile" ${deezerAttr}>
+              ${getArtistMediaHTML({ imagePath, displayName, useSkeleton })}
+              <span class="artist-name">${displayName}</span>
             </div>
             `;
         });
@@ -945,14 +1071,13 @@ function renderConcerts() {
             <div class="concert-header-left">
               ${locationHTML}
               ${festivalHTML}
-              <div class="info-item">
-                <i class="bi bi-pin-map"></i>
-                <span>${concert.city}</span>
-              </div>
             </div>
             <div class="concert-header-right">
               <div class="concert-date">
                 <i class="bi bi-calendar3"></i> ${dateStr}
+              </div>
+              <div class="concert-city">
+                <i class="bi bi-pin-map"></i> ${concert.city}
               </div>
             </div>
                 </div>
