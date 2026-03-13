@@ -1,0 +1,872 @@
+// Concerts page functionality
+
+// Concert data
+const concertsData = [
+  {
+    date: "2016-02-17",
+    artists: [
+      { name: "Berywam", image: "berywam.jpg" },
+      { name: "Bigflo et Oli", image: "bigflo&oli.jpg" },
+    ],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2016-03-10",
+    artists: [
+      { name: "Georgio", image: "georgio.jpg" },
+      { name: "Vald", image: "vald.webp" },
+    ],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2017-07-04",
+    artists: [{ name: "Alt J", image: "altj.jpg" }],
+    festival: "Nuits de fourvières",
+    city: "Lyon",
+  },
+  {
+    date: "2017-10-21",
+    artists: [
+      { name: "Gros Mo", image: "grosmo.jpg" },
+      { name: "Lomepal", image: "lomepal.jpg" },
+    ],
+    location: "Coopérative de mai",
+    festival: "Festival Sismic",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2018-03-23",
+    artists: [
+      { name: "Nusky", image: "nusky.jpg" },
+      { name: "Roméo Elvis", image: "romeoelvis.webp" },
+    ],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2018-04-26",
+    artists: [
+      { name: "Biffty & Julius", image: "biffty&julius.jpg" },
+      { name: "Caballero & Jeanjass", image: "caballero&jeanjass.jpg" },
+      { name: "Damso", image: "damso.jpg" },
+      { name: "Orelsan", image: "orelsan.jpg" },
+    ],
+    festival: "Printemps de Bourges",
+    city: "Bourges",
+  },
+  {
+    date: "2018-05-19",
+    artists: [{ name: "Alt J", image: "altj.jpg" }],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2018-06-30",
+    artists: [
+      { name: "Riles", image: "riles.jpg" },
+      { name: "Tommy Cash", image: "tommycash.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2018-07-01",
+    artists: [
+      { name: "Lomepal", image: "lomepal.jpg" },
+      { name: "Angèle", image: "angele.webp" },
+      { name: "Orelsan", image: "orelsan.jpg" },
+      { name: "Di-meh & Makala & Slimka", image: "dimehslimkamakala.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2019-06-27",
+    artists: [
+      { name: "Lord Esperanza", image: "lordesperanza.jpg" },
+      { name: "Roméo Elvis", image: "romeoelvis.webp" },
+      { name: "Nekfeu", image: "nekfeu.webp" },
+      { name: "Salut c'est cool", image: "salutcestcool.jpg" },
+      { name: "PLK", image: "plk.jpg" },
+      { name: "Columbine", image: "columbine.jpg" },
+      { name: "Georgio", image: "georgio.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2021-12-15",
+    artists: [{ name: "Igorrr", image: "igorrr.webp" }],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+    note: "The first concert where I went solo.",
+  },
+  {
+    date: "2022-04-01",
+    artists: [{ name: "Orelsan", image: "orelsan.jpg" }],
+    location: "Zénith d'Auvergne",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2022-06-17",
+    artists: [
+      { name: "Opeth", image: "opeth.jpg" },
+      { name: "In Other Climes", image: "inotherclimes.jpg" },
+      { name: "Mordred", image: "mordred.webp" },
+      { name: "Abbath", image: "abbath.webp" },
+      { name: "Cadaver", image: "cadaver.jpg" },
+    ],
+    festival: "Hellfest",
+    city: "Clisson",
+  },
+  {
+    date: "2022-06-18",
+    artists: [
+      { name: "Invisions", image: "invisions.jpg" },
+      { name: "Heaven Shall Burn", image: "heavenshallburn.jpg" },
+      { name: "Megadeath", image: "megadeath.webp" },
+      { name: "Alestorm", image: "alestorm.webp" },
+      { name: "Deep Purple", image: "deeppurple.webp" },
+      { name: "Helheim", image: "helheim.jpg" },
+      { name: "Sepultura", image: "sepultura.webp" },
+      { name: "Brutal Sphincter", image: "brutalsphincter.jpg" },
+      { name: "Rectal Smegma", image: "rectalsmegma.jpg" },
+    ],
+    festival: "Hellfest",
+    city: "Clisson",
+  },
+  {
+    date: "2022-06-19",
+    artists: [
+      { name: "Korn", image: "korn.jpg" },
+      { name: "Gojira", image: "gojira.jpg" },
+      { name: "Down", image: "down.jpg" },
+      { name: "Landmvrks", image: "landmvrks.jpg" },
+      { name: "While she sleeps", image: "whileshesleeps.jpg" },
+      { name: "Walls of Jericho", image: "wallsofjericho.jpg" },
+      {
+        name: "Regarde les hommes tomber",
+        image: "regardeleshommestomber.jpg",
+      },
+      { name: "Alcest", image: "alcest.webp" },
+    ],
+    festival: "Hellfest",
+    city: "Clisson",
+  },
+  {
+    date: "2022-07-01",
+    artists: [
+      { name: "Oboy", image: "oboy.jpg" },
+      { name: "Vald", image: "vald.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2022-07-02",
+    artists: [
+      { name: "Laylow", image: "laylow.jpg" },
+      { name: "Vladimir Cauchemar", image: "vladimircauchemar.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2022-07-03",
+    artists: [
+      { name: "Sopico", image: "sopico.jpg" },
+      { name: "Lujipeka", image: "lujipeka.jpg" },
+      { name: "Angèle", image: "angele.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2022-10-21",
+    artists: [{ name: "SCH", image: "sch.jpg" }],
+    location: "Zénith d'Auvergne",
+    city: "Clermont-Ferrand",
+    note: "Such amazed by SCH fits during the show, that I only dressed in black udring the weeks following the concert.",
+  },
+  {
+    date: "2023-06-17",
+    artists: [
+      { name: "Angsty Camboyz Revenge", image: "angstycamboyzrevenge.jpg" },
+    ],
+    location: "Raymond Bar",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2023-06-30",
+    artists: [
+      { name: "Pomme", image: "pomme.jpg" },
+      { name: "Josman", image: "josman.jpg" },
+      { name: "Varnish la piscine", image: "varnishlapiscine.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2023-08-26",
+    artists: [
+      { name: "Zola", image: "zola.jpg" },
+      { name: "Bushi", image: "bushi.jpg" },
+      { name: "Makala", image: "makala.jpg" },
+      { name: "Nes", image: "nes.jpg" },
+    ],
+    festival: "Woodstower",
+    city: "Lyon",
+    note: "We finished the festival with 10cm of water above our ankles.",
+  },
+  {
+    date: "2023-09-30",
+    artists: [
+      { name: "Sto", image: "sto.jpg" },
+      { name: "Sheldon", image: "sheldon.jpg" },
+    ],
+    location: "Confort Moderne",
+    city: "Poitiers",
+  },
+  {
+    date: "2023-10-13",
+    artists: [
+      { name: "Nocif", image: "nocif.jpg" },
+      { name: "H Jeune Crack", image: "hjeunecrack.jpg" },
+    ],
+    location: "Marché Gare",
+    city: "Lyon",
+  },
+  {
+    date: "2024-03-08",
+    artists: [{ name: "Slimka", image: "slimka.jpg" }],
+    location: "Le Sucre",
+    city: "Lyon",
+  },
+  {
+    date: "2024-04-20",
+    artists: [{ name: "Infinit", image: "infinit.jpg" }],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2024-05-31",
+    artists: [
+      { name: "Asheo", image: "asheo.jpg" },
+      { name: "Jeune Mort", image: "jeunemort.jpg" },
+    ],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+    note: "It's the period when I started to follow Clermont-Ferrand underground rap scene, notably open-mics.",
+  },
+  {
+    date: "2024-06-07",
+    artists: [
+      { name: "Domingo Cruz", image: "domingocruz.jpg" },
+      { name: "Bara8!", image: "bara8.jpg" },
+      { name: "Lovarran", image: "lovarran.jpg" },
+      { name: "Arch", image: "arch.jpg" },
+    ],
+    location: "Coopérative de mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2024-06-22",
+    artists: [
+      { name: "Deelee S & Le Double", image: "deelees&ledouble.jpg" },
+      { name: "Kay The Prodigy", image: "kaytheprodigy.jpg" },
+      { name: "Jolagreen23", image: "jolagreen23.jpg" },
+      { name: "Infinit", image: "infinit.jpg" },
+    ],
+    location: "Halle Tropisme",
+    festival: "La Calle Havana",
+    city: "Montpellier",
+  },
+  {
+    date: "2024-06-28",
+    artists: [
+      { name: "So La Lune", image: "solalune.png" },
+      {
+        name: "Doums & Némir & Edge & Esso Luxueux & S.Pri Noir & 2ZER & Mekra & Framal",
+        image: "doums.jpg",
+      },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+    note: "I went to see Ratu$ and Deen Burbigo who should have perform with Doums, the only 2 that have been skipped by lack of time.",
+  },
+  {
+    date: "2024-06-29",
+    artists: [
+      { name: "La Fève", image: "lafeve.jpg" },
+      { name: "Prince Waly", image: "princewaly.jpg" },
+      { name: "Eloi", image: "eloi.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2024-06-30",
+    artists: [
+      { name: "Luther", image: "luther.jpg" },
+      { name: "Isha & Limsa", image: "isha&limsa.webp" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2024-09-20",
+    artists: [
+      { name: "Nobodylikesbirdie", image: "nobodylikesbirdie.jpg" },
+      { name: "Jaymee", image: "jaymee.jpg" },
+      { name: "Douze Déluge", image: "douzedeluge.jpg" },
+      { name: "CRC", image: "crc.jpg" },
+      { name: "Deelee S", image: "deelees.jpg" },
+      { name: "Baby Neelou", image: "babyneelou.webp" },
+      { name: "Babysolo33", image: "babysolo33.jpg" },
+      { name: "Edge", image: "edge.jpg" },
+      { name: "Zinée", image: "zinee.png" },
+      { name: "Jolagreen23", image: "jolagreen23.jpg" },
+      { name: "Ben PLG", image: "benplg.webp" },
+      { name: "NeS", image: "nes.jpg" },
+      { name: "Wallace Cleaver", image: "wallacecleaver.jpg" },
+      { name: "Winnterzuko", image: "winnterzuko.png" },
+      { name: "Zeu", image: "zeu.png" },
+    ],
+    festival: "Grünt festival",
+    city: "Bobigny",
+    note: "I slept one week in my car to assist to this festival.",
+  },
+  {
+    date: "2024-09-21",
+    artists: [
+      { name: "Giuseppe", image: "giuseppe.webp" },
+      { name: "Heloïm", image: "heloim.jpg" },
+      { name: "Zoomy", image: "zoomy.jpg" },
+      { name: "Huntrill", image: "huntrill.jpg" },
+      { name: "Isha & Limsa", image: "isha&limsa.webp" },
+      { name: "Jäde", image: "jade.jpg" },
+      { name: "ADVM", image: "advm.jpg" },
+      { name: "Keroué", image: "keroue.webp" },
+      { name: "Ptite Soeur", image: "ptitesoeur.jpg" },
+      { name: "TH", image: "th.jpg" },
+      { name: "Zamdane", image: "zamdane.jpg" },
+      { name: "Tif", image: "tif.jpg" },
+      {
+        name: "Luther & Rounhaa & Abel31 & Amne & Irko & Süblime",
+        image: "sublime.jpg",
+      },
+    ],
+    festival: "Grünt festival",
+    city: "Bobigny",
+  },
+  {
+    date: "2024-09-25",
+    artists: [{ name: "BB Jacques", image: "bbjacques.jpg" }],
+    location: "Gaité Lyrique",
+    city: "Paris",
+    note: "It was the release party of his new album Bluebird.",
+  },
+  {
+    date: "2024-11-09",
+    artists: [
+      { name: "ADVM", image: "advm.jpg" },
+      { name: "Jaymee", image: "jaymee.jpg" },
+      { name: "Sheng", image: "sheng.jpg" },
+      { name: "Heloim", image: "heloim.jpg" },
+    ],
+    location: "La Marbrerie",
+    city: "Montreuil",
+    festival: "Séquence Club",
+  },
+  {
+    date: "2024-11-14",
+    artists: [
+      { name: "Luther", image: "luther.jpg" },
+      { name: "6ilverr", image: "6ilverr.jpg" },
+    ],
+    location: "Coopérative de Mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2024-11-23",
+    artists: [
+      { name: "Peterparker69", image: "peterparker69.jpg" },
+      { name: "Wagahai is neko", image: "wagahaiisneko.jpg" },
+      { name: "Bloody$anji", image: "bloodysanji.jpg" },
+      { name: "6ilverr", image: "6ilverr.jpg" },
+      { name: "Ucyll", image: "ucyll.jpg" },
+      { name: "Shooda", image: "Shooda.jpg" },
+      { name: "Lorenzi", image: "lorenzi.jpg" },
+      { name: "Ano poli", image: "anopoli.jpg" },
+      { name: "Yume", image: "yume.jpg" },
+    ],
+    location: "Gaîté Lyrique",
+    festival: "Rêves 11",
+    city: "Paris",
+  },
+  {
+    date: "2024-11-24",
+    artists: [
+      { name: "Steban", image: "steban.jpg" },
+      { name: "Jrk19", image: "jrk19.jpg" },
+      { name: "Dinos", image: "dinos.jpg" },
+    ],
+    festival: "Dans le club Arte",
+    location: "Gaîté Lyrique",
+    city: "Paris",
+  },
+  {
+    date: "2024-11-29",
+    artists: [
+      { name: "Ratu$", image: "ratus.jpg" },
+      { name: "Blaz Pit", image: "blazpit.jpg" },
+    ],
+    location: "Gaîté Lyrique",
+    city: "Paris",
+  },
+  {
+    date: "2024-12-06",
+    artists: [{ name: "Selug & $enar", image: "selug&senar.jpg" }],
+    location: "La Machine du Moulin Rouge",
+    city: "Paris",
+  },
+  {
+    date: "2024-12-13",
+    artists: [
+      { name: "Sto", image: "sto.jpg" },
+      { name: "Romsii", image: "romsii.jpg" },
+    ],
+    location: "Trabendo",
+    city: "Paris",
+  },
+  {
+    date: "2024-12-19",
+    artists: [
+      { name: "ADVM", image: "advm.jpg" },
+      { name: "Baby Neelou", image: "babyneelou.jpg" },
+      { name: "Mandyspie", image: "mandyspie.jpg" },
+      { name: "DND", image: "dnd.jpg" },
+      { name: "Dara", image: "dara.jpg" },
+      { name: "Kay the Prodigy", image: "kaytheprodigy.jpg" },
+      { name: "thaHomey", image: "thahomey.jpg" },
+      { name: "Gemen", image: "gemen.jpg" },
+      { name: "elyslime!", image: "elyslime.jpg" },
+      {
+        name: "Woody & Franz Keloh & Berlam & Mac the fire",
+        image: "woody&franzkeloh&berlam&macthefire.jpg",
+      },
+    ],
+    location: "FGO-Barbara",
+    city: "Paris",
+    festival: "Symbiose Release Party",
+  },
+  {
+    date: "2025-01-09",
+    artists: [{ name: "Jolagreen23", image: "jolagreen23.jpg" }],
+    location: "La Cigale",
+    city: "Paris",
+  },
+  {
+    date: "2025-01-11",
+    artists: [{ name: "Kaaris", image: "kaaris.jpg" }],
+    location: "Paris La Défense Arena",
+    city: "Nanterre",
+  },
+  {
+    date: "2025-01-24",
+    artists: [
+      { name: "Al Walid", image: "alwalid.jpg" },
+      { name: "Guiseppe", image: "guiseppe.jpg" },
+      { name: "Leo SVR", image: "leosvr.jpg" },
+      { name: "Myth Syzer", image: "mythsyzer.jpg" },
+    ],
+    location: "Petit Bain",
+    city: "Paris",
+    festival: "Séquence Club",
+  },
+  {
+    date: "2025-03-08",
+    artists: [
+      { name: "Houdi", image: "houdi.jpg" },
+      { name: "Deelee S", image: "deelees.jpg" },
+    ],
+    location: "Zénith Paris - La Villette",
+    city: "Paris",
+  },
+  {
+    date: "2025-04-03",
+    artists: [
+      { name: "Jeune Lion", image: "jeunelion.jpg" },
+      { name: "elyslime!", image: "elyslime.jpg" },
+    ],
+    location: "La Place",
+    city: "Paris",
+  },
+  {
+    date: "2025-04-16",
+    artists: [{ name: "Théodora", image: "theodora.jpg" }],
+    location: "Cabaret Sauvage",
+    city: "Paris",
+  },
+  {
+    date: "2025-06-13",
+    artists: [{ name: "Arch", image: "arch.jpg" }],
+    location: "Start & Stop",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-06-21",
+    artists: [{ name: "Arch", image: "arch.jpg" }],
+    location: "Place des Carmes",
+    festival: "Fête de la musique",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-06-21",
+    artists: [{ name: "Arch", image: "arch.jpg" }],
+    location: "Place des Carmes",
+    festival: "Fête de la musique",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-06-27",
+    artists: [
+      { name: "Lamomali", image: "lamomali.jpg" },
+      { name: "Polo & Pan", image: "polo&pan.webp" },
+      { name: "Bekar", image: "bekar.jpg" },
+      { name: "Roland Cristal", image: "rolandcristal.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-06-28",
+    artists: [
+      { name: "Philippe Katerine", image: "philippekaterine.jpg" },
+      { name: "Kavinsky", image: "kavinsky.webp" },
+      { name: "Dalí", image: "dali.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-06-29",
+    artists: [
+      { name: "Zaho de Sagazan", image: "zahodesagazan.jpg" },
+      { name: "Théa", image: "thea.webp" },
+      { name: "Jolagreen23", image: "jolagreen.jpg" },
+      { name: "Super Parquet", image: "superparquet.jpg" },
+    ],
+    festival: "Europavox",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-07-18",
+    artists: [{ name: "Bandikoot", image: "bandikoot.jpg" }],
+    festival: "Raeverie Festival",
+    city: "Saint-Éloy-les-Mines",
+  },
+  {
+    date: "2025-07-19",
+    artists: [
+      { name: "Von Bikräv", image: "vonbikrav.jpg" },
+      { name: "Silence", image: "silence.jpg" },
+      { name: "Flkn", image: "flkn.jpg" },
+    ],
+    festival: "Raeverie Festival",
+    city: "Saint-Éloy-les-Mines",
+  },
+  {
+    date: "2025-07-25",
+    artists: [{ name: "DJ Schnake", image: "djschnake.jpg" }],
+    festival: "Château Perché",
+    city: "Farcheville",
+  },
+  {
+    date: "2025-07-26",
+    artists: [
+      { name: "Jean Paul Groove", image: "jeanpaulgroove.jpg" },
+      { name: "Romain Play", image: "romainplay.jpg" },
+    ],
+    festival: "Château Perché",
+    city: "Farcheville",
+  },
+  {
+    date: "2025-09-20",
+    artists: [
+      { name: "toma!", image: "toma.jpg" },
+      { name: "GAL", image: "GAL.webp" },
+      { name: "Toothpick", image: "toothpick.jpg" },
+      { name: "Arch", image: "arch.jpg" },
+    ],
+    location: "Le Lieu-Dit",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-09-26",
+    artists: [{ name: "Arch", image: "arch.jpg" }],
+    location: "La Boule Noire",
+    city: "Paris",
+  },
+  {
+    date: "2025-10-04",
+    artists: [
+      { name: "Ramirez", image: "ramirez.jpg" },
+      { name: "Sxmpra", image: "sxmpra.webp" },
+    ],
+    location: "La Bellevilloise",
+    city: "Paris",
+  },
+  {
+    date: "2025-10-04",
+    artists: [
+      { name: "Jade", image: "jade.jpg" },
+      { name: "Akissi", image: "akissi.webp" },
+    ],
+    festival: "Séquence Club",
+    location: "Dock B",
+    city: "Pantin",
+  },
+  {
+    date: "2025-10-08",
+    artists: [
+      { name: "Infinit", image: "infinit.jpg" },
+      { name: "Deelee S", image: "deelees.webp" },
+      { name: "Le Double", image: "ledouble.webp" },
+      { name: "Chavi", image: "chavi.webp" },
+      { name: "OgLounis", image: "oglounis.webp" },
+    ],
+    location: "La Cigale",
+    city: "Paris",
+  },
+  {
+    date: "2025-10-11",
+    artists: [
+      { name: "Arch", image: "arch.jpg" },
+      { name: "notinbed", image: "notinbed.jpg" },
+    ],
+    festival: "Sismic",
+    location: "Coopérative de Mai",
+    city: "Clermont-Ferrand",
+  },
+  {
+    date: "2025-11-22",
+    artists: [
+      { name: "Irko", image: "arch.jpg" },
+      { name: "Alcatraz", image: "arch.jpg" },
+      { name: "Lili Castiglioni", image: "arch.jpg" },
+      { name: "ELIESG", image: "arch.jpg" },
+      { name: "Vendredear", image: "arch.jpg" },
+      { name: "Vilhelm", image: "arch.jpg" },
+      { name: "Ayegy", image: "arch.jpg" },
+    ],
+    location: "Le Trabendo",
+    city: "Paris",
+  },
+  {
+    date: "2025-11-28",
+    artists: [
+      { name: "COEURCO", image: "arch.jpg" },
+      { name: "PLEUR", image: "arch.jpg" },
+      { name: "32", image: "arch.jpg" },
+      { name: "encoreuneautre", image: "arch.jpg" },
+      { name: "8racks", image: "arch.jpg" },
+      { name: "Dries Bormans", image: "arch.jpg" },
+      { name: "bahamas", image: "arch.jpg" },
+      { name: "idée noire", image: "arch.jpg" },
+      { name: "Bloody Sanji", image: "arch.jpg" },
+      { name: "Yume", image: "arch.jpg" },
+      { name: "Lorenzi", image: "arch.jpg" },
+    ],
+    location: "Petit Bain",
+    festival: "Rêves 15",
+    city: "Paris",
+  },
+  {
+    date: "2025-12-16",
+    artists: [{ name: "32", image: "32.jpg" }],
+    location: "La Rotonde Stalingrad",
+    festival: "Mosaïque N°12 - Launch Party",
+    city: "Paris",
+  },
+  {
+    date: "2025-12-19",
+    artists: [{ name: "Nobodylikesbirdie", image: "nobodylikesbirdie.jpg" }],
+    location: "La Boule Noire",
+    city: "Paris",
+  },
+];
+
+let currentFilter = "all";
+
+// Initialize the page
+function init() {
+  calculateStats();
+  generateYearFilters();
+  renderConcerts();
+  setupFilterListeners();
+}
+
+// Calculate statistics
+function calculateStats() {
+  const totalConcerts = concertsData.length;
+  const uniqueArtists = new Set();
+  const uniqueFestivals = new Set();
+  const uniqueCities = new Set();
+
+  concertsData.forEach((concert) => {
+    concert.artists.forEach((artist) => uniqueArtists.add(artist.name));
+    if (concert.festival) uniqueFestivals.add(concert.festival);
+    uniqueCities.add(concert.city);
+  });
+
+  document.getElementById("total-concerts").textContent = totalConcerts;
+  document.getElementById("total-artists").textContent = uniqueArtists.size;
+  document.getElementById("total-festivals").textContent = uniqueFestivals.size;
+  document.getElementById("total-cities").textContent = uniqueCities.size;
+}
+
+// Generate year filter buttons
+function generateYearFilters() {
+  const years = [
+    ...new Set(concertsData.map((c) => new Date(c.date).getFullYear())),
+  ].sort((a, b) => b - a);
+  const filterContainer = document.getElementById("year-filters");
+
+  years.forEach((year) => {
+    const btn = document.createElement("button");
+    btn.className = "btn btn-outline-primary";
+    btn.setAttribute("data-year", year);
+    btn.textContent = year;
+    filterContainer.appendChild(btn);
+  });
+}
+
+// Setup filter button listeners
+function setupFilterListeners() {
+  document.getElementById("year-filters").addEventListener("click", (e) => {
+    if (e.target.tagName === "BUTTON") {
+      // Update active state
+      document.querySelectorAll("#year-filters button").forEach((btn) => {
+        btn.classList.remove("active-filter");
+      });
+      e.target.classList.add("active-filter");
+
+      // Update filter and render
+      currentFilter = e.target.getAttribute("data-year");
+      renderConcerts();
+    }
+  });
+}
+
+// Render concerts
+function renderConcerts() {
+  const container = document.getElementById("concerts-container");
+  const noResults = document.getElementById("no-results");
+  container.innerHTML = "";
+
+  // Filter concerts
+  const filteredConcerts =
+    currentFilter === "all"
+      ? concertsData
+      : concertsData.filter(
+          (c) => new Date(c.date).getFullYear().toString() === currentFilter,
+        );
+
+  // Sort by date (newest first)
+  filteredConcerts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  if (filteredConcerts.length === 0) {
+    noResults.style.display = "block";
+    return;
+  }
+
+  noResults.style.display = "none";
+
+  filteredConcerts.forEach((concert) => {
+    const col = document.createElement("div");
+    col.className = "col-lg-4 col-md-6 mb-4";
+
+    const date = new Date(concert.date);
+    const dateStr = date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
+    let artistsHTML = "";
+    concert.artists.forEach((artist) => {
+      const imagePath = `../../fel/concerts/images/artists/${artist.image}`;
+      artistsHTML += `
+                <span class="artist-badge">
+                    <img src="${imagePath}" alt="${artist.name}" onerror="this.style.display='none'">
+                    ${artist.name}
+                </span>
+            `;
+    });
+
+    let locationHTML = "";
+    if (concert.location) {
+      locationHTML = `
+                <div class="info-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>${concert.location}</span>
+                </div>
+            `;
+    }
+
+    let festivalHTML = "";
+    if (concert.festival) {
+      festivalHTML = `
+                <div class="info-item">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>${concert.festival}</span>
+                </div>
+            `;
+    }
+
+    let noteHTML = "";
+    if (concert.note) {
+      noteHTML = `
+                <div class="concert-note">
+                    <i class="bi bi-lightbulb"></i> ${concert.note}
+                </div>
+            `;
+    }
+
+    col.innerHTML = `
+            <div class="concert-card">
+                <div class="concert-date">
+                    <i class="bi bi-calendar3"></i> ${dateStr}
+                </div>
+                
+                <div class="concert-info">
+                    ${locationHTML}
+                    ${festivalHTML}
+                    <div class="info-item">
+                        <i class="bi bi-pin-map"></i>
+                        <span>${concert.city}</span>
+                    </div>
+                </div>
+                
+                <div class="artists-section">
+                    <div class="artists-title">
+                        <i class="bi bi-people-fill"></i> Artists (${concert.artists.length})
+                    </div>
+                    <div class="artists-list">
+                        ${artistsHTML}
+                    </div>
+                </div>
+                
+                ${noteHTML}
+            </div>
+        `;
+
+    container.appendChild(col);
+  });
+}
+
+// Initialize on page load
+init();
