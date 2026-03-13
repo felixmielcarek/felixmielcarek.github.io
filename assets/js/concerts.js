@@ -1,7 +1,9 @@
 // Concerts page functionality
 
 // Artists database - Define each artist once
-// Add deezerId field for artists available on Deezer (replace 0 with actual ID)
+// - deezerId: Deezer artist ID for API image fetching
+// - picture:  local filename in assets/images/artists/ (for artists without a Deezer ID)
+//             e.g.  picture: "8racks.jpg"
 const artistsData = {
     "6ilverr": { name: "6ilverr", deezerId: 144498472 },
     32: { name: "32", deezerId: 311547721 },
@@ -20,12 +22,12 @@ const artistsData = {
         deezerId: 111418182,
     },
     "ano-poli": { name: "Ano poli" },
-    arch: { name: "Arch" },
+    arch: { name: "ARCH", picture: "arch.jpg" },
     asheo: { name: "Ashéo", deezerId: 14509319 },
     ayegy: { name: "Ayegy" },
     "baby-neelou": { name: "BABY NEELOU", deezerId: 88726552 },
     babysolo33: { name: "BabySolo33", deezerId: 57754602 },
-    bahamas: { name: "bahamas", deezerId: 0 },
+    bahamas: { name: "bahamas" },
     bandikoot: { name: "Bandikoot", deezerId: 71503942 },
     bara8: { name: "BARA8!", deezerId: 181638667 },
     "bb-jacques": { name: "B.B. Jacques", deezerId: 107059632 },
@@ -49,11 +51,11 @@ const artistsData = {
     dara: { name: "Dara", deezerId: 65223022 },
     "deep-purple": { name: "Deep Purple", deezerId: 864 },
     "deelee-s": { name: "DEELEE S", deezerId: 146378152 },
-    "deelee-s-le-double": { name: "Deelee S & Le Double", deezerId: 0 },
-    "di-meh-makala-slimka": { name: "Di-meh & Makala & Slimka", deezerId: 0 },
+    "deelee-s-le-double": { name: "Deelee S & Le Double" },
+    "di-meh-makala-slimka": { name: "Di-meh & Makala & Slimka" },
     dinos: { name: "Dinos", deezerId: 292949 },
     "dj-schnake": { name: "DJ Schnake", deezerId: 339000701 },
-    dnd: { name: "DND", deezerId: 0 },
+    dnd: { name: "DND" },
     "domingo-cruz": { name: "Domingo Cruz", deezerId: 87872602 },
     "doums-collab": {
         name: "Doums & Némir & Edge & Esso Luxueux & S.Pri Noir & 2ZER & Mekra & Framal",
@@ -86,7 +88,7 @@ const artistsData = {
     infinit: { name: "Infinit'", deezerId: 5531672 },
     invisions: { name: "InVisions", deezerId: 8282632 },
     irko: { name: "Irko", deezerId: 9483292 },
-    "isha-limsa": { name: "Isha & Limsa", deezerId: 0 },
+    "isha-limsa": { name: "Isha & Limsa" },
     jade: { name: "Jäde", deezerId: 78534732 },
     jaymee: { name: "Jaymee", deezerId: 1705266 },
     "jean-paul-groove": { name: "Jean-Paul Groove", deezerId: 140967152 },
@@ -159,7 +161,7 @@ const artistsData = {
     sheldon: { name: "Sheldon", deezerId: 173048 },
     sheng: { name: "Sheng", deezerId: 1242216 },
     shooda: { name: "Shooda", deezerId: 14340053 },
-    silence: { name: "Silence", deezerId: 0 },
+    silence: { name: "Silence" },
     slimka: { name: "Slimka", deezerId: 12121824 },
     "so-la-lune": { name: "So La Lune", deezerId: 68553672 },
     sopico: { name: "Sopico", deezerId: 10615109 },
@@ -178,11 +180,11 @@ const artistsData = {
     ucyll: { name: "Ucyll", deezerId: 93804812 },
     vald: { name: "Vald", deezerId: 5175734 },
     "varnish-la-piscine": { name: "Varnish La Piscine", deezerId: 12121826 },
-    vendredear: { name: "Vendredear", deezerId: 0 },
+    vendredear: { name: "Vendredear" },
     vilhelm: { name: "Vilhelm.", deezerId: 128462002 },
     "vladimir-cauchemar": { name: "Vladimir Cauchemar", deezerId: 13682095 },
     "von-bikrav": { name: "Von Bikräv", deezerId: 11674147 },
-    "wagahai-is-neko": { name: "Wagahai is neko", deezerId: 0 },
+    "wagahai-is-neko": { name: "Wagahai is neko" },
     "wallace-cleaver": { name: "Wallace Cleaver", deezerId: 52375982 },
     "walls-of-jericho": { name: "Walls of Jericho", deezerId: 673 },
     "while-she-sleeps": { name: "While She Sleeps", deezerId: 403781 },
@@ -197,7 +199,7 @@ const artistsData = {
     zinee: { name: "Zinee", deezerId: 84898762 },
     zola: { name: "Zola", deezerId: 13962203 },
     zoomy: { name: "Zoomy", deezerId: 87611072 },
-    yume: { name: "Yume", deezerId: 0 },
+    yume: { name: "Yume" },
 };
 
 // Concert data - Reference artists by ID
@@ -787,6 +789,8 @@ function getArtistDisplayState(artist) {
         } else {
             useSkeleton = true;
         }
+    } else if (artist.picture) {
+        imagePath = `../../assets/images/artists/${artist.picture}`;
     }
 
     return {
@@ -1019,9 +1023,9 @@ function renderConcerts() {
             const { deezerId, imagePath, displayName, useSkeleton } =
                 getArtistDisplayState(artist);
 
-            if (!deezerId) {
+            if (!deezerId && !artist.picture) {
                 console.info(
-                    `[Concerts] No image available for artist "${artist.name}" (no Deezer ID)`,
+                    `[Concerts] No image available for artist "${artist.name}" (no Deezer ID or local picture)`,
                 );
             }
 

@@ -176,11 +176,11 @@ class DeezerAPI {
 
             const image =
                 artistData?.picture ||
-                (artist.image
-                    ? `../../fel/concerts/images/artists/${artist.image}`
+                (artist.picture
+                    ? `../../assets/images/artists/${artist.picture}`
                     : fallbackImagePath);
 
-            if (artist.deezerId && !artistData?.picture) {
+            if (artist.deezerId && !artistData?.picture && !artist.picture) {
                 console.info(
                     `[Deezer] No image found for "${localName}" (ID: ${artist.deezerId})`,
                 );
@@ -192,7 +192,7 @@ class DeezerAPI {
                 image,
                 picture_small: artistData?.picture_small,
                 picture_big: artistData?.picture_big,
-                manualImage: artist.image, // Keep manual image as fallback
+                localPicture: artist.picture, // Keep local picture as fallback
             };
 
             enrichedArtists.push(enrichedArtist);
