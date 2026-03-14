@@ -25,6 +25,7 @@ const artistsData = {
     arch: { name: "ARCH", picture: "arch.jpg" },
     asheo: { name: "Ashéo", deezerId: 14509319 },
     ayegy: { name: "Ayegy" },
+    "b-y": { name: "B-Y", deezerId: 4027530 },
     "baby-neelou": { name: "BABY NEELOU", deezerId: 88726552 },
     babysolo33: { name: "BabySolo33", deezerId: 57754602 },
     bahamas: { name: "bahamas" },
@@ -47,6 +48,7 @@ const artistsData = {
     columbine: { name: "Columbine", deezerId: 7042927 },
     crc: { name: "CRC", deezerId: 436723 },
     dali: { name: "Dalí", deezerId: 139920622 },
+    damayenthy: { name: "damayenthy", deezerId: 354944742 },
     damso: { name: "Damso", deezerId: 9197980 },
     dara: { name: "Dara", deezerId: 65223022 },
     "deep-purple": { name: "Deep Purple", deezerId: 864 },
@@ -55,7 +57,7 @@ const artistsData = {
     "di-meh-makala-slimka": { name: "Di-meh & Makala & Slimka" },
     dinos: { name: "Dinos", deezerId: 292949 },
     "dj-schnake": { name: "DJ Schnake", deezerId: 339000701 },
-    dnd: { name: "DND" },
+    dnd: { name: "DND", deezerId: 174649227 },
     "domingo-cruz": { name: "Domingo Cruz", deezerId: 87872602 },
     "doums-collab": {
         name: "Doums & Némir & Edge & Esso Luxueux & S.Pri Noir & 2ZER & Mekra & Framal",
@@ -154,8 +156,11 @@ const artistsData = {
     "romain-play": { name: "Romain Play", deezerId: 7691392 },
     "romeo-elvis": { name: "Roméo Elvis", deezerId: 7961408 },
     romsii: { name: "Romsii", deezerId: 118643972 },
+    ryuu: { name: "Ryuu", deezerId: 9691616 },
+    sabd: { name: "Sabd", deezerId: 86480502 },
     "salut-cest-cool": { name: "Salut C'est Cool", deezerId: 7802522 },
     sch: { name: "SCH", deezerId: 162665 },
+    sean: { name: "sean", deezerId: 59474172 },
     "selug-senar": { name: "Selug & $enar", deezerId: 66468592 },
     sepultura: { name: "Sepultura", deezerId: 632 },
     sheldon: { name: "Sheldon", deezerId: 173048 },
@@ -193,6 +198,7 @@ const artistsData = {
         name: "Woody & Franz Keloh & Berlam & Mac the fire",
         deezerId: 0,
     },
+    "wlidi-&-aazyk": { name: "Wlidi & Aazyk", deezerId: 112333662 },
     "zaho-de-sagazan": { name: "Zaho de Sagazan", deezerId: 112645512 },
     zamdane: { name: "Zamdane", deezerId: 13152245 },
     zeu: { name: "Zeu", deezerId: 10848422 },
@@ -692,6 +698,21 @@ const concertsRawData = [
         artists: ["nobodylikesbirdie"],
         placeId: "la-boule-noire",
     },
+    {
+        date: "2026-01-08",
+        artists: ["ryuu", "wlidi-&-aazyk", "b-y", "damayenthy", "sabd"],
+        placeId: "les-disquaires",
+    },
+    {
+        date: "2026-01-30",
+        artists: ["sean", "jaymee"],
+        placeId: "dock-b",
+    },
+    {
+        date: "2026-01-29",
+        artists: ["makala"],
+        placeId: "la-cigale",
+    },
 ];
 
 // Unique places catalog (manually enrich with coordinates)
@@ -895,6 +916,12 @@ const placesSeedData = {
         city: "Paris",
         lat: 48.8835848,
         lng: 2.3695698,
+    },
+    "les-disquaires": {
+        location: "Les Disquaires",
+        city: "Paris",
+        lat: 48.85444641113281,
+        lng: 2.3751769065856934,
     },
 };
 
