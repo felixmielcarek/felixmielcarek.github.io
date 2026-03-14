@@ -1,13 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
 
-html, body {
-    font-family: 'Montserrat', sans-serif;
+:root {
+    --ui-border: 2px solid rgba(192, 192, 192, 0.2);
+    --ui-radius: 18px;
+    --ui-radius-md: 12px;
+    --ui-radius-sm: 8px;
+    --ui-radius-pill: 999px;
+    --ui-card-bg: linear-gradient(
+        135deg,
+        rgba(192, 192, 192, 0.05),
+        rgba(255, 192, 203, 0.05)
+    );
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Monsieur La Doulaise', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Monsieur La Doulaise", cursive;
     font-weight: 400;
 }
 
@@ -15,12 +34,95 @@ body {
     margin: 0px;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
     color: #e8e8e8;
-    
+
     display: flex;
     flex-direction: column;
-    
+
     min-height: 100vh;
     justify-content: space-between;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.ui-card {
+    background: var(--ui-card-bg);
+    border: var(--ui-border);
+    border-radius: var(--ui-radius);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+}
+
+.page-header-card {
+    padding: 0.5rem 0 1rem;
+    margin-bottom: 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.page-header {
+    position: relative;
+}
+
+.page-title {
+    font-size: 3.5em;
+    margin: 0;
+    background: linear-gradient(135deg, #ffc0cb, #c0c0c0, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+}
+
+.page-lead {
+    color: #e8e8e8;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.page-muted,
+.text-muted {
+    color: #c0c0c0 !important;
+}
+
+.page-back-link {
+    color: #c0c0c0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+}
+
+.page-back-link:hover {
+    color: #ffc0cb;
+    text-shadow: 0 0 10px rgba(255, 192, 203, 0.5);
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5em;
+    }
+
+    .page-header-card {
+        padding: 0.5rem 0 1rem;
+    }
+
+    .page-back-link {
+        position: static;
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 }
 
 a {

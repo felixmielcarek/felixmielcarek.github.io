@@ -1,98 +1,125 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concerts - FÃ©lix Mielcarek</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../assets/css/common.css" />
-    <link rel="stylesheet" href="../../assets/css/concerts.css" />
-  </head>
-  <body>
-    <div class="main-container">
-      <!-- Header -->
-      <div class="header">
-        <a href="../../index.html" class="back-link mb-3 d-inline-block">
-          <i class="bi bi-arrow-left"></i> Back to Home
-        </a>
-        <h1>My Concert Journey</h1>
-        <p>
-          Since my childhood I've been listening to music, my parents being
-          amateur musicians themselves. Here are all the concerts I've attended!
-        </p>
-        <p class="text-muted">
-          <small
-            ><i class="bi bi-info-circle"></i> Note: I was born in October
-            2002</small
-          >
-        </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Me - Portfelio</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../../assets/css/common.css" />
+        <link rel="stylesheet" href="../../assets/css/concerts.css" />
+        <!-- Leaflet CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
+    </head>
+    <body>
+        <main class="page-container me-page">
+            <section class="page-header-card page-header text-center">
+                <a href="../../index.html" class="page-back-link">
+                    <i class="bi bi-arrow-left"></i> Back to Home
+                </a>
+                <h1 class="page-title">My Concert Journey</h1>
+            </section>
 
-        <!-- Stats -->
-        <div class="stats-row row mt-3">
-          <div class="col-md-3 col-6 mb-2">
-            <div class="stat-card">
-              <h3 id="total-concerts">0</h3>
-              <p>Total Concerts</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-2">
-            <div class="stat-card">
-              <h3 id="total-artists">0</h3>
-              <p>Artists Seen</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-2">
-            <div class="stat-card">
-              <h3 id="total-festivals">0</h3>
-              <p>Festivals</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-2">
-            <div class="stat-card">
-              <h3 id="total-cities">0</h3>
-              <p>Cities Visited</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <section class="stats-row row mt-0 mb-4">
+                <div class="col-md-3 col-6 mb-2">
+                    <div class="stat-card">
+                        <h3 id="total-concerts">0</h3>
+                        <p>Total Concerts</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <div class="stat-card">
+                        <h3 id="total-artists">0</h3>
+                        <p>Artists Seen</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <div class="stat-card">
+                        <h3 id="total-festivals">0</h3>
+                        <p>Festivals</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <div class="stat-card">
+                        <h3 id="total-cities">0</h3>
+                        <p>Cities Visited</p>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Filter Section -->
-      <div class="filter-section">
-        <h5 class="mb-3"><i class="bi bi-funnel"></i> Filter by Year</h5>
-        <div id="year-filters" class="d-flex flex-wrap">
-          <button class="btn btn-outline-primary active-filter" data-year="all">
-            All Years
-          </button>
-        </div>
-      </div>
+            <!-- Map Preview -->
+            <section class="concerts-map-section mb-4">
+                <div class="concerts-map-card">
+                    <div class="top-artists-header">
+                        <h5><i class="bi bi-map"></i> Concert Locations</h5>
+                    </div>
+                    <div id="concerts-map" class="concerts-map"></div>
+                </div>
+            </section>
 
-      <!-- Concerts Grid -->
-      <div id="concerts-container" class="row">
-        <!-- Cards will be generated here -->
-      </div>
+            <section class="top-artists-section mb-4">
+                <div class="top-artists-card">
+                    <div class="top-artists-header">
+                        <h5>
+                            <i class="bi bi-stars"></i> Top 10 Most Seen Artists
+                        </h5>
+                    </div>
+                    <div id="top-artists-list" class="top-artists-list"></div>
+                </div>
+            </section>
 
-      <!-- No Results -->
-      <div id="no-results" class="no-results" style="display: none">
-        <i class="bi bi-search"></i>
-        <h4>No concerts found</h4>
-        <p class="text-muted">Try selecting a different year</p>
-      </div>
-    </div>
+            <!-- Filter Section -->
+            <section class="filter-section mb-4">
+                <h5 class="mb-3">
+                    <i class="bi bi-funnel"></i> Filter by Year
+                </h5>
+                <div id="year-filters" class="d-flex flex-wrap">
+                    <button
+                        class="btn btn-outline-primary active-filter"
+                        data-year="all"
+                    >
+                        All Years
+                    </button>
+                </div>
+            </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Concerts JS -->
-    <script src="../../assets/js/concerts.js"></script>
-  </body>
+            <!-- Concerts Grid -->
+            <section class="mb-4">
+                <div id="concerts-container" class="row">
+                    <!-- Cards will be generated here -->
+                </div>
+
+                <!-- No Results -->
+                <div id="no-results" class="no-results" style="display: none">
+                    <i class="bi bi-search"></i>
+                    <h4>No concerts found</h4>
+                    <p class="text-muted">Try selecting a different year</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Deezer API Helper -->
+        <script src="../../assets/js/deezer-api.js"></script>
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <!-- Concerts JS -->
+        <script src="../../assets/js/concerts.js"></script>
+    </body>
 </html>
