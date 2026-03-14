@@ -17,6 +17,11 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="../../assets/css/common.css" />
         <link rel="stylesheet" href="../../assets/css/concerts.css" />
+        <!-- Leaflet CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
     </head>
     <body>
         <main class="page-container me-page">
@@ -25,17 +30,6 @@
                     <i class="bi bi-arrow-left"></i> Back to Home
                 </a>
                 <h1 class="page-title">My Concert Journey</h1>
-                <p class="page-lead">
-                    Since my childhood I've been listening to music, my parents
-                    being amateur musicians themselves. Here are all the
-                    concerts I've attended!
-                </p>
-                <p class="page-muted">
-                    <small
-                        ><i class="bi bi-info-circle"></i> Note: I was born in
-                        October 2002</small
-                    >
-                </p>
             </section>
 
             <section class="stats-row row mt-0 mb-4">
@@ -65,15 +59,22 @@
                 </div>
             </section>
 
+            <!-- Map Preview -->
+            <section class="concerts-map-section mb-4">
+                <div class="concerts-map-card">
+                    <div class="top-artists-header">
+                        <h5><i class="bi bi-map"></i> Concert Locations</h5>
+                    </div>
+                    <div id="concerts-map" class="concerts-map"></div>
+                </div>
+            </section>
+
             <section class="top-artists-section mb-4">
                 <div class="top-artists-card">
                     <div class="top-artists-header">
                         <h5>
                             <i class="bi bi-stars"></i> Top 10 Most Seen Artists
                         </h5>
-                        <span class="top-artists-subtitle"
-                            >The 10 artists I saw the most live</span
-                        >
                     </div>
                     <div id="top-artists-list" class="top-artists-list"></div>
                 </div>
@@ -114,6 +115,9 @@
 
         <!-- Deezer API Helper -->
         <script src="../../assets/js/deezer-api.js"></script>
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
         <!-- Concerts JS -->
         <script src="../../assets/js/concerts.js"></script>
