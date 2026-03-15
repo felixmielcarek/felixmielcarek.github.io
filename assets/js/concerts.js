@@ -8,6 +8,7 @@ const artistsData = {
     "6ilverr": { name: "6ilverr", deezerId: 144498472 },
     32: { name: "32", deezerId: 311547721 },
     "8racks": { name: "8racks" },
+    a2: { name: "A2", deezerId: 378351141 },
     abbath: { name: "Abbath", deezerId: 7683228 },
     advm: { name: "ADVM", deezerId: 5463376 },
     akissi: { name: "AKISSI", deezerId: 146935412 },
@@ -71,6 +72,7 @@ const artistsData = {
     eloi: { name: "Eloi", deezerId: 6151932 },
     elyslime: { name: "elyslime!", deezerId: 147958552 },
     encoreuneautre: { name: "encore une autre", deezerId: 309692451 },
+    faelix: { name: "Faelix", deezerId: 153662532 },
     flkn: { name: "FLKN", deezerId: 137443572 },
     gal: { name: "GAL", deezerId: 304485351 },
     gemen: { name: "Gemen", deezerId: 1056523 },
@@ -88,6 +90,7 @@ const artistsData = {
     igorrr: { name: "Igorrr", deezerId: 1025520 },
     "in-other-climes": { name: "In Other Climes", deezerId: 399035 },
     infinit: { name: "Infinit'", deezerId: 5531672 },
+    "ino-casablanca": { name: "Ino Casablanca", deezerId: 181895087 },
     invisions: { name: "InVisions", deezerId: 8282632 },
     irko: { name: "Irko", deezerId: 9483292 },
     "isha-limsa": { name: "Isha & Limsa" },
@@ -134,6 +137,7 @@ const artistsData = {
     nusky: { name: "Nusky", deezerId: 11234719 },
     oboy: { name: "OBOY", deezerId: 4986771 },
     oglounis: { name: "OgLounis", deezerId: 78294182 },
+    ooralise: { name: "OORALISE", deezerId: 200661487 },
     opeth: { name: "Opeth", deezerId: 2814 },
     orelsan: { name: "Orelsan", deezerId: 259467 },
     peterparker69: { name: "Peterparker69", deezerId: 157878062 },
@@ -179,6 +183,7 @@ const artistsData = {
     thea: { name: "THÉA", deezerId: 195760897 },
     theodora: { name: "Theodora", deezerId: 13820325 },
     tif: { name: "TIF", deezerId: 9430902 },
+    timaru: { name: "Timaru", deezerId: 165892777 },
     toma: { name: "toma!", deezerId: 348145031 },
     "tommy-cash": { name: "Tommy Cash", deezerId: 178856 },
     toothpick: { name: "Toothpick", deezerId: 985637 },
@@ -713,6 +718,11 @@ const concertsRawData = [
         artists: ["makala"],
         placeId: "la-cigale",
     },
+    {
+        date: "2026-03-14",
+        artists: ["ino-casablanca", "faelix", "ooralise", "a2", "timaru"],
+        placeId: "l-odeon-de-tremblay",
+    },
 ];
 
 // Unique places catalog (manually enrich with coordinates)
@@ -922,6 +932,12 @@ const placesSeedData = {
         city: "Paris",
         lat: 48.85444641113281,
         lng: 2.3751769065856934,
+    },
+    "l-odeon-de-tremblay": {
+        location: "L'Odéon de Tremblay",
+        city: "Tremblay-en-France",
+        lat: 48.942556,
+        lng: 2.570847,
     },
 };
 
