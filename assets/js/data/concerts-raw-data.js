@@ -327,7 +327,7 @@ const concertsRawData = [
   },
   {
     date: "2024-12-06",
-    artists: ["selug-senar"],
+    artists: ["selug"],
     placeId: "la-machine-du-moulin-rouge",
   },
   {
