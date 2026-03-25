@@ -1,557 +1,557 @@
 /* Concerts page styles */
 
 .me-page .page-header-card .page-title {
-    font-size: 3em;
-    margin-bottom: 1rem;
+  font-size: 3em;
+  margin-bottom: 1rem;
 }
 
 /* Statistics cards */
 .stat-card {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.1),
-        rgba(255, 192, 203, 0.1)
-    );
-    border: var(--ui-border);
-    color: #e8e8e8;
-    border-radius: var(--ui-radius);
-    padding: 1.25rem;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.1),
+    rgba(255, 192, 203, 0.1)
+  );
+  border: var(--ui-border);
+  color: #e8e8e8;
+  border-radius: var(--ui-radius);
+  padding: 1.25rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-    border-color: #ffc0cb;
-    box-shadow: 0 5px 20px rgba(255, 192, 203, 0.3);
-    transform: translateY(-3px);
+  border-color: #ffc0cb;
+  box-shadow: 0 5px 20px rgba(255, 192, 203, 0.3);
+  transform: translateY(-3px);
 }
 
 .stat-card h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.25rem;
-    color: #ffc0cb;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: #ffc0cb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .stat-card p {
-    margin: 0;
-    font-size: 2rem;
-    color: #c0c0c0;
-    font-weight: 400;
-    font-family: "Monsieur La Doulaise", cursive;
+  margin: 0;
+  font-size: 2rem;
+  color: #c0c0c0;
+  font-weight: 400;
+  font-family: "Monsieur La Doulaise", cursive;
 }
 
 .top-artists-card {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.05),
-        rgba(255, 192, 203, 0.05)
-    );
-    border: var(--ui-border);
-    border-radius: var(--ui-radius);
-    padding: 1.5rem;
-    backdrop-filter: blur(10px);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.05),
+    rgba(255, 192, 203, 0.05)
+  );
+  border: var(--ui-border);
+  border-radius: var(--ui-radius);
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
 }
 
 .top-artists-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .top-artists-header h5 {
-    margin: 0;
-    color: #ffc0cb;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+  margin: 0;
+  color: #ffc0cb;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .top-artists-subtitle {
-    color: #c0c0c0;
-    font-size: 0.9rem;
-    font-weight: 300;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .top-artists-list {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.85rem;
 }
 
 .top-artist-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0.8rem;
-    border-radius: var(--ui-radius-md);
-    border: 1px solid rgba(192, 192, 192, 0.24);
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.12),
-        rgba(255, 192, 203, 0.12)
-    );
-    min-height: 100%;
-    color: #e8e8e8;
-    transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.8rem;
+  border-radius: var(--ui-radius-md);
+  border: 1px solid rgba(192, 192, 192, 0.24);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.12),
+    rgba(255, 192, 203, 0.12)
+  );
+  min-height: 100%;
+  color: #e8e8e8;
+  transition: all 0.2s;
 }
 
 .top-artist-card:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.2),
-        rgba(255, 192, 203, 0.2)
-    );
-    border-color: #ffc0cb;
-    color: #ffc0cb;
-    transform: translateY(-2px);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.2),
+    rgba(255, 192, 203, 0.2)
+  );
+  border-color: #ffc0cb;
+  color: #ffc0cb;
+  transform: translateY(-2px);
 }
 
 .top-artist-card.active-artist-filter {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 192, 203, 0.3),
-        rgba(192, 192, 192, 0.25)
-    );
-    border-color: #ffc0cb;
-    box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.3),
+    rgba(192, 192, 192, 0.25)
+  );
+  border-color: #ffc0cb;
+  box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4);
 }
 
 .top-artist-photo {
-    position: relative;
+  position: relative;
 }
 
 .top-artist-photo img,
 .top-artist-photo .artist-avatar-placeholder,
 .top-artist-photo .artist-img-skeleton {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border-radius: var(--ui-radius-sm);
-    object-fit: contain;
-    background: rgba(255, 192, 203, 0.08);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: var(--ui-radius-sm);
+  object-fit: contain;
+  background: rgba(255, 192, 203, 0.08);
 }
 
 .top-artist-badge {
-    position: absolute;
-    top: 0.45rem;
-    right: 0.45rem;
-    z-index: 1;
-    min-width: 2rem;
-    height: 2rem;
-    padding: 0 0.45rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--ui-radius-pill);
-    background: rgba(18, 18, 18, 0.82);
-    border: 1px solid rgba(255, 192, 203, 0.45);
-    color: #ffc0cb;
-    font-size: 0.85rem;
-    font-weight: 600;
-    backdrop-filter: blur(8px);
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 1;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ui-radius-pill);
+  background: rgba(18, 18, 18, 0.82);
+  border: 1px solid rgba(255, 192, 203, 0.45);
+  color: #ffc0cb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
 }
 
 .top-artist-content {
-    text-align: center;
+  text-align: center;
 }
 
 .top-artist-name {
-    color: #e8e8e8;
-    font-size: 0.95rem;
-    line-height: 1.25;
-    font-weight: 400;
+  color: #e8e8e8;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  font-weight: 400;
 }
 
 /* Map section */
 .concerts-map-card {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.05),
-        rgba(255, 192, 203, 0.05)
-    );
-    border: var(--ui-border);
-    border-radius: var(--ui-radius);
-    padding: 1.5rem;
-    backdrop-filter: blur(10px);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.05),
+    rgba(255, 192, 203, 0.05)
+  );
+  border: var(--ui-border);
+  border-radius: var(--ui-radius);
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
 }
 
 .concerts-map {
-    height: 380px;
-    border-radius: var(--ui-radius-md);
-    overflow: hidden;
-    border: var(--ui-border);
+  height: 380px;
+  border-radius: var(--ui-radius-md);
+  overflow: hidden;
+  border: var(--ui-border);
 }
 
 /* Leaflet popup themed */
 .concert-map-popup .leaflet-popup-content-wrapper {
-    background: rgba(18, 18, 18, 0.92);
-    border: 1px solid rgba(255, 192, 203, 0.35);
-    border-radius: var(--ui-radius-sm);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(12px);
-    padding: 0;
+  background: rgba(18, 18, 18, 0.92);
+  border: 1px solid rgba(255, 192, 203, 0.35);
+  border-radius: var(--ui-radius-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 0;
 }
 
 .concert-map-popup .leaflet-popup-tip {
-    background: rgba(18, 18, 18, 0.92);
+  background: rgba(18, 18, 18, 0.92);
 }
 
 .map-popup-inner {
-    padding: 0.6rem 0.85rem;
+  padding: 0.6rem 0.85rem;
 }
 
 .map-popup-venue {
-    color: #ffc0cb;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.3;
+  color: #ffc0cb;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .map-popup-city {
-    color: #c0c0c0;
-    font-size: 0.78rem;
-    font-weight: 300;
-    margin-top: 0.15rem;
+  color: #c0c0c0;
+  font-size: 0.78rem;
+  font-weight: 300;
+  margin-top: 0.15rem;
 }
 
 .map-popup-city .bi {
-    font-size: 0.72rem;
-    margin-right: 0.2rem;
+  font-size: 0.72rem;
+  margin-right: 0.2rem;
 }
 
 .map-popup-count {
-    color: #e8e8e8;
-    font-size: 0.78rem;
-    font-weight: 300;
-    margin-top: 0.2rem;
-    opacity: 0.75;
+  color: #e8e8e8;
+  font-size: 0.78rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+  opacity: 0.75;
 }
 
 /* Filter section */
 .filter-section {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.05),
-        rgba(255, 192, 203, 0.05)
-    );
-    border: var(--ui-border);
-    border-radius: var(--ui-radius);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    backdrop-filter: blur(10px);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.05),
+    rgba(255, 192, 203, 0.05)
+  );
+  border: var(--ui-border);
+  border-radius: var(--ui-radius);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
 }
 
 .filter-section h5 {
-    color: #ffc0cb;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+  color: #ffc0cb;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .filter-section .btn {
-    margin: 0.25rem;
-    font-weight: 300;
+  margin: 0.25rem;
+  font-weight: 300;
 }
 
 /* Concert cards */
 .concert-card {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.1),
-        rgba(255, 192, 203, 0.1)
-    );
-    border: var(--ui-border);
-    border-radius: var(--ui-radius);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.1),
+    rgba(255, 192, 203, 0.1)
+  );
+  border: var(--ui-border);
+  border-radius: var(--ui-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
 .concert-card:hover {
-    border-color: #ffc0cb;
-    transform: translateY(-5px);
-    box-shadow:
-        0 10px 40px rgba(255, 192, 203, 0.3),
-        0 0 20px rgba(192, 192, 192, 0.2);
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.15),
-        rgba(255, 192, 203, 0.15)
-    );
+  border-color: #ffc0cb;
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 40px rgba(255, 192, 203, 0.3),
+    0 0 20px rgba(192, 192, 192, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.15),
+    rgba(255, 192, 203, 0.15)
+  );
 }
 
 .concert-date {
-    display: inline-block;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 192, 203, 0.2),
-        rgba(192, 192, 192, 0.2)
-    );
-    border: 1px solid rgba(255, 192, 203, 0.4);
-    color: #ffc0cb;
-    padding: 0.5rem 1rem;
-    border-radius: var(--ui-radius-pill);
-    font-weight: 400;
-    font-size: 0.9rem;
-    white-space: nowrap;
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.2),
+    rgba(192, 192, 192, 0.2)
+  );
+  border: 1px solid rgba(255, 192, 203, 0.4);
+  color: #ffc0cb;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ui-radius-pill);
+  font-weight: 400;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .concert-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .concert-header-left {
-    flex: 1;
+  flex: 1;
 }
 
 .concert-header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
 }
 
 .concert-city {
-    color: #c0c0c0;
-    font-weight: 300;
-    text-align: right;
-    white-space: nowrap;
+  color: #c0c0c0;
+  font-weight: 300;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .concert-info,
 .concert-header-left {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .concert-info .info-item,
 .concert-header-left .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    color: #e8e8e8;
-    font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #e8e8e8;
+  font-weight: 300;
 }
 
 .concert-info .info-item i,
 .concert-header-left .info-item i {
-    margin-right: 0.5rem;
-    color: #ffc0cb;
-    width: 20px;
+  margin-right: 0.5rem;
+  color: #ffc0cb;
+  width: 20px;
 }
 
 /* Artists section */
 .artists-section {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 2px solid rgba(192, 192, 192, 0.1);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(192, 192, 192, 0.1);
 }
 
 .artists-title {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #c0c0c0;
-    margin-bottom: 0.75rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c0c0c0;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 
 .artists-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
 }
 
 .artist-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.15),
-        rgba(255, 192, 203, 0.15)
-    );
-    border: 1px solid rgba(192, 192, 192, 0.3);
-    border-radius: var(--ui-radius-md);
-    padding: 0.6rem 0.5rem;
-    min-height: 150px;
-    color: #e8e8e8;
-    transition: all 0.2s;
-    font-weight: 300;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.15),
+    rgba(255, 192, 203, 0.15)
+  );
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  border-radius: var(--ui-radius-md);
+  padding: 0.6rem 0.5rem;
+  min-height: 150px;
+  color: #e8e8e8;
+  transition: all 0.2s;
+  font-weight: 300;
+  text-align: center;
 }
 
 .artist-tile:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.2),
-        rgba(255, 192, 203, 0.2)
-    );
-    border-color: #ffc0cb;
-    color: #ffc0cb;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.2),
+    rgba(255, 192, 203, 0.2)
+  );
+  border-color: #ffc0cb;
+  color: #ffc0cb;
 }
 
 @keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .artist-img-skeleton {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border-radius: var(--ui-radius-sm);
-    margin-bottom: 0.45rem;
-    background: linear-gradient(
-        90deg,
-        rgba(192, 192, 192, 0.05) 25%,
-        rgba(255, 192, 203, 0.18) 50%,
-        rgba(192, 192, 192, 0.05) 75%
-    );
-    background-size: 200% 100%;
-    animation: shimmer 1.5s infinite linear;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: var(--ui-radius-sm);
+  margin-bottom: 0.45rem;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 192, 192, 0.05) 25%,
+    rgba(255, 192, 203, 0.18) 50%,
+    rgba(192, 192, 192, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
 }
 
 .artist-img-entering {
-    opacity: 0;
-    transition: opacity 0.4s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .artist-img-entering.artist-img-loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
 .artist-tile img,
 .artist-avatar-placeholder {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border-radius: var(--ui-radius-sm);
-    margin-bottom: 0.45rem;
-    object-fit: contain;
-    background: rgba(255, 192, 203, 0.08);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: var(--ui-radius-sm);
+  margin-bottom: 0.45rem;
+  object-fit: contain;
+  background: rgba(255, 192, 203, 0.08);
 }
 
 .artist-avatar-placeholder {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 192, 203, 0.18);
-    border: 1px solid rgba(255, 192, 203, 0.35);
-    color: #ffc0cb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 192, 203, 0.18);
+  border: 1px solid rgba(255, 192, 203, 0.35);
+  color: #ffc0cb;
 }
 
 .artist-name {
-    font-size: 0.8rem;
-    line-height: 1.2;
+  font-size: 0.8rem;
+  line-height: 1.2;
 }
 
 /* Concert notes */
 .concert-note {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 192, 203, 0.1),
-        rgba(192, 192, 192, 0.1)
-    );
-    border-left: 4px solid #ffc0cb;
-    border-radius: var(--ui-radius-sm);
-    font-size: 0.9rem;
-    color: #e8e8e8;
-    font-weight: 300;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.1),
+    rgba(192, 192, 192, 0.1)
+  );
+  border-left: 4px solid #ffc0cb;
+  border-radius: var(--ui-radius-sm);
+  font-size: 0.9rem;
+  color: #e8e8e8;
+  font-weight: 300;
 }
 
 .concert-note i {
-    color: #ffc0cb;
+  color: #ffc0cb;
 }
 
 /* Buttons */
 .btn-outline-primary {
-    color: #c0c0c0;
-    border-color: rgba(192, 192, 192, 0.3);
-    background: transparent;
-    border-radius: var(--ui-radius-md);
+  color: #c0c0c0;
+  border-color: rgba(192, 192, 192, 0.3);
+  background: transparent;
+  border-radius: var(--ui-radius-md);
 }
 
 .btn-outline-primary:hover {
-    color: #ffc0cb;
-    border-color: #ffc0cb;
-    background: rgba(255, 192, 203, 0.1);
+  color: #ffc0cb;
+  border-color: #ffc0cb;
+  background: rgba(255, 192, 203, 0.1);
 }
 
 .active-filter {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 192, 203, 0.3),
-        rgba(192, 192, 192, 0.3)
-    ) !important;
-    border-color: #ffc0cb !important;
-    color: #ffc0cb !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.3),
+    rgba(192, 192, 192, 0.3)
+  ) !important;
+  border-color: #ffc0cb !important;
+  color: #ffc0cb !important;
 }
 
 /* No results message */
 .no-results {
-    text-align: center;
-    padding: 3rem;
-    background: linear-gradient(
-        135deg,
-        rgba(192, 192, 192, 0.05),
-        rgba(255, 192, 203, 0.05)
-    );
-    border: var(--ui-border);
-    border-radius: var(--ui-radius);
-    backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.05),
+    rgba(255, 192, 203, 0.05)
+  );
+  border: var(--ui-border);
+  border-radius: var(--ui-radius);
+  backdrop-filter: blur(10px);
 }
 
 .no-results i {
-    font-size: 4rem;
-    color: rgba(192, 192, 192, 0.3);
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  color: rgba(192, 192, 192, 0.3);
+  margin-bottom: 1rem;
 }
 
 .no-results h4 {
-    color: #ffc0cb;
-    font-size: 2rem;
+  color: #ffc0cb;
+  font-size: 2rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .me-page .page-header-card .page-title {
-        font-size: 2em;
-    }
+  .me-page .page-header-card .page-title {
+    font-size: 2em;
+  }
 
-    .top-artists-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .top-artists-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .top-artists-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .top-artists-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .concert-header {
-        flex-direction: column;
-    }
+  .concert-header {
+    flex-direction: column;
+  }
 
-    .artists-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .artists-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .stat-card h3 {
-        font-size: 1.8rem;
-    }
+  .stat-card h3 {
+    font-size: 1.8rem;
+  }
 }

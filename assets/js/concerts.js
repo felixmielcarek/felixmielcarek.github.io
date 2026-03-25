@@ -318,7 +318,8 @@ function renderTopArtists() {
       const { deezerId, imagePath, displayName, useSkeleton } =
         getArtistDisplayState(artist);
       const deezerAttr = deezerId ? `data-deezer-id="${deezerId}"` : "";
-      const activeClass = currentArtistFilter === artistId ? " active-artist-filter" : "";
+      const activeClass =
+        currentArtistFilter === artistId ? " active-artist-filter" : "";
 
       return `
                 <article class="top-artist-card${activeClass}" ${deezerAttr} data-artist-id="${artistId}" style="cursor: pointer;">
@@ -339,19 +340,19 @@ function renderTopArtists() {
 function calculateStats() {
   const totalConcerts = concertsData.length;
   const uniqueArtists = new Set();
-  const uniqueFestivals = new Set();
+  const uniqueLocations = new Set();
   const uniqueCities = new Set();
 
   concertsData.forEach((concert) => {
     const place = placesData[concert.placeId];
     concert.artists.forEach((artistId) => uniqueArtists.add(artistId));
-    if (place?.festival) uniqueFestivals.add(place.festival);
+    if (place?.location) uniqueLocations.add(place.location);
     if (place?.city) uniqueCities.add(place.city);
   });
 
   document.getElementById("total-concerts").textContent = totalConcerts;
   document.getElementById("total-artists").textContent = uniqueArtists.size;
-  document.getElementById("total-festivals").textContent = uniqueFestivals.size;
+  document.getElementById("total-locations").textContent = uniqueLocations.size;
   document.getElementById("total-cities").textContent = uniqueCities.size;
 }
 
@@ -393,14 +394,14 @@ function setupFilterListeners() {
     const artistCard = e.target.closest(".top-artist-card");
     if (artistCard) {
       const artistId = artistCard.getAttribute("data-artist-id");
-      
+
       // Toggle artist filter
       if (currentArtistFilter === artistId) {
         currentArtistFilter = null;
       } else {
         currentArtistFilter = artistId;
       }
-      
+
       renderTopArtists();
       renderConcerts();
     }
@@ -411,7 +412,7 @@ function setupFilterListeners() {
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {
       currentArtistFilter = null;
-      
+
       renderTopArtists();
       renderConcerts();
     });
@@ -435,7 +436,7 @@ function renderConcerts() {
   // Filter concerts by artist
   if (currentArtistFilter) {
     filteredConcerts = filteredConcerts.filter((c) =>
-      c.artists.includes(currentArtistFilter)
+      c.artists.includes(currentArtistFilter),
     );
   }
 
