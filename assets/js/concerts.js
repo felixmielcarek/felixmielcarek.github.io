@@ -78,6 +78,7 @@ const { concerts: concertsData, places: placesData } =
   normalizeConcertsWithPlaces(concertsRawData, placesSeedData);
 
 let currentFilter = "all";
+let currentArtistFilter = null;
 let enrichedArtistsMap = new Map();
 
 function getTopArtists(limit = 10) {
@@ -313,13 +314,14 @@ function renderTopArtists() {
   const topArtists = getTopArtists();
 
   container.innerHTML = topArtists
-    .map(({ count, artist }) => {
+    .map(({ artistId, count, artist }) => {
       const { deezerId, imagePath, displayName, useSkeleton } =
         getArtistDisplayState(artist);
       const deezerAttr = deezerId ? `data-deezer-id="${deezerId}"` : "";
+      const activeClass = currentArtistFilter === artistId ? " active-artist-filter" : "";
 
       return `
-                <article class="top-artist-card" ${deezerAttr}>
+                <article class="top-artist-card${activeClass}" ${deezerAttr} data-artist-id="${artistId}" style="cursor: pointer;">
                     <div class="top-artist-photo">
                         <div class="top-artist-badge">${count}</div>
                         ${getArtistMediaHTML({ imagePath, displayName, useSkeleton })}
@@ -371,6 +373,7 @@ function generateYearFilters() {
 
 // Setup filter button listeners
 function setupFilterListeners() {
+  // Year filters
   document.getElementById("year-filters").addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
       // Update active state
@@ -384,6 +387,35 @@ function setupFilterListeners() {
       renderConcerts();
     }
   });
+
+  // Artist filters
+  document.getElementById("top-artists-list").addEventListener("click", (e) => {
+    const artistCard = e.target.closest(".top-artist-card");
+    if (artistCard) {
+      const artistId = artistCard.getAttribute("data-artist-id");
+      
+      // Toggle artist filter
+      if (currentArtistFilter === artistId) {
+        currentArtistFilter = null;
+      } else {
+        currentArtistFilter = artistId;
+      }
+      
+      renderTopArtists();
+      renderConcerts();
+    }
+  });
+
+  // Reset filters button
+  const resetBtn = document.getElementById("reset-filters-btn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      currentArtistFilter = null;
+      
+      renderTopArtists();
+      renderConcerts();
+    });
+  }
 }
 
 // Render concerts
@@ -392,13 +424,20 @@ function renderConcerts() {
   const noResults = document.getElementById("no-results");
   container.innerHTML = "";
 
-  // Filter concerts
-  const filteredConcerts =
+  // Filter concerts by year
+  let filteredConcerts =
     currentFilter === "all"
       ? concertsData
       : concertsData.filter(
           (c) => new Date(c.date).getFullYear().toString() === currentFilter,
         );
+
+  // Filter concerts by artist
+  if (currentArtistFilter) {
+    filteredConcerts = filteredConcerts.filter((c) =>
+      c.artists.includes(currentArtistFilter)
+    );
+  }
 
   // Sort by date (newest first)
   filteredConcerts.sort((a, b) => new Date(b.date) - new Date(a.date));

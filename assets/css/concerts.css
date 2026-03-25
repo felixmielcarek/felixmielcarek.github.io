@@ -107,6 +107,17 @@
     );
     border-color: #ffc0cb;
     color: #ffc0cb;
+    transform: translateY(-2px);
+}
+
+.top-artist-card.active-artist-filter {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 192, 203, 0.3),
+        rgba(192, 192, 192, 0.25)
+    );
+    border-color: #ffc0cb;
+    box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4);
 }
 
 .top-artist-photo {
