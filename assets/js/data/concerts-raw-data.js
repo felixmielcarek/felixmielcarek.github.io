@@ -538,4 +538,9 @@ const concertsRawData = [
         artists: ["th"],
         placeId: "l-olympia",
     },
+    {
+        date: "2026-04-11",
+        artists: ["sim01","blizzard","guizy"],
+        placeId: "fgo-barbara",
+    },
 ];
