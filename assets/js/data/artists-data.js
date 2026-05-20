@@ -158,6 +158,7 @@ const artistsData = {
   "ptite-soeur": { name: "Ptite Soeur", deezerId: 130998972 },
   ramirez: { name: "Ramirez", deezerId: 115756 },
   ratus: { name: "Ratu$", deezerId: 59563612 },
+  realo: { name: "Realo", deezerId: 14415029 },
   "rectal-smegma": { name: "Rectal Smegma", deezerId: 204502 },
   "regarde-les-hommes-tomber": {
     name: "Regarde Les Hommes Tomber",
