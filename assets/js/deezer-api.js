@@ -177,7 +177,7 @@ class DeezerAPI {
             const image =
                 artistData?.picture ||
                 (artist.picture
-                    ? `../../assets/images/artists/${artist.picture}`
+                    ? `assets/images/artists/${artist.picture}`
                     : fallbackImagePath);
 
             if (artist.deezerId && !artistData?.picture && !artist.picture) {

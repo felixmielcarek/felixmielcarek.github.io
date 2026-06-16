@@ -125,7 +125,7 @@ function getArtistDisplayState(artist) {
             useSkeleton = true;
         }
     } else if (artist.picture) {
-        imagePath = `../../assets/images/artists/${artist.picture}`;
+        imagePath = `assets/images/artists/${artist.picture}`;
     }
 
     return {
